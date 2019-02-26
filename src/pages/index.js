@@ -1,7 +1,10 @@
 import React from 'react';
+import Header from '../components/header';
 
 const IndexPage = () => (
-  <h1>Create Vulekamali</h1>
+  <React.Fragment>
+    <Header />
+  </React.Fragment>
 );
 
 export default IndexPage;
