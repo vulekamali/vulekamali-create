@@ -5,29 +5,11 @@ import ContainerLayout from '../containerLayout';
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 125px;
   background-color: #323130;
-  margin-top: 600px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media screen and (min-width: 450px) {
-    margin-top: 490px;
-  }
-
-  @media screen and (min-width: 650px) {
-    margin-top: 500px;
-  }
-
-  @media screen and (min-width: 850px) {
-    margin-top: 500px;
-    height: 90px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    margin-top: 500px;
-  }
 `;
 
 const TextContainer = styled.div`
