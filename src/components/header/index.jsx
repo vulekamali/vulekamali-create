@@ -8,40 +8,51 @@ const Wrapper = styled.div`
   height: 68px;
   background-color: #21292E;
   display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const ListContainer = styled.ul`
-  width: 280px;
   display: flex;
   justify-content: space-between;
+  padding: 0;
 `;
 
 const List = styled.li`
   list-style: none;
+  text-align: center;
 `;
 
 const LinkStyle = styled(Link)`
   text-decoration: none;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
   text-transform: Uppercase;
   font-family: Lato;
+  font-weight: 900;
+  line-height: normal;
+  font-size: 14px;
+
+  &:hover {
+    color: #fff;
+  }
+
+  &:active {
+    color: ##8ECA62;
+    font-weight: 400;
+  }
 `;
 
-
-const Header = () => (
+const Header = ({ links }) => (
   <Wrapper>
     <ContainerLayout>
       <ListContainer>
-        <List>
-          <LinkStyle to="https://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-US.pdf#zoom=100">
-            Vulekamali Create
-          </LinkStyle>
-        </List>
-        <List>
-          <LinkStyle to="https://www.scrumguides.org/docs/scrumguide/v2017/2017-Scrum-Guide-US.pdf#zoom=100">
-            Vulekamali
-          </LinkStyle>
-        </List>
+        {links.map(({ item, link }) => (
+          <List>
+            <LinkStyle key={item} to={link}>
+              {item}
+            </LinkStyle>
+          </List>
+        ))}
       </ListContainer>
     </ContainerLayout>
   </Wrapper>
