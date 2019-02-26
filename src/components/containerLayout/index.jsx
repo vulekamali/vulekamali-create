@@ -14,11 +14,11 @@ const Container = styled.div`
   }
 
   @media screen and (min-width: 850px) {
-    max-width: 700px;
+    max-width: 800px;
   }
 
   @media screen and (min-width: 1024px) {
-    max-width: 1066px;
+    max-width: 1000px;
   }
 `;
 
