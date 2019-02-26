@@ -29,17 +29,22 @@ const LinkStyle = styled(Link)`
   color: rgba(255, 255, 255, 0.8);
   text-transform: Uppercase;
   font-family: Lato;
-  font-weight: 900;
+  font-weight: 700;
   line-height: normal;
-  font-size: 14px;
+  font-size: 12px;
 
   &:hover {
     color: #fff;
   }
 
-  &:active {
+  &:focus {
     color: #8ECA62;
     font-weight: 400;
+  }
+
+  @media screen and (min-width: 450px) {
+    font-weight: 900;
+    font-size: 14px;
   }
 `;
 

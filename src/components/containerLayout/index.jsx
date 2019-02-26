@@ -6,6 +6,18 @@ const Container = styled.div`
   max-width: 280px;
 
   @media screen and (min-width: 450px) {
+    max-width: 380px;
+  }
+
+  @media screen and (min-width: 650px) {
+    max-width: 500px;
+  }
+
+  @media screen and (min-width: 850px) {
+    max-width: 700px;
+  }
+
+  @media screen and (min-width: 1024px) {
     max-width: 1066px;
   }
 `;
