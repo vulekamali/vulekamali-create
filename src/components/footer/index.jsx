@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   width: 100%;
   height: 125px;
   background-color: #323130;
-  margin-top: 550px;
+  margin-top: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,16 +17,16 @@ const Wrapper = styled.div`
   }
 
   @media screen and (min-width: 650px) {
-    margin-top: 420px;
+    margin-top: 500px;
   }
 
   @media screen and (min-width: 850px) {
-    margin-top: 330px;
+    margin-top: 500px;
     height: 90px;
   }
 
   @media screen and (min-width: 1024px) {
-    margin-top: 340px;
+    margin-top: 500px;
   }
 `;
 
