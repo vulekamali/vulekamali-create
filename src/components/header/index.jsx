@@ -13,6 +13,7 @@ const Wrapper = styled.div`
 `;
 
 const ListContainer = styled.ul`
+  max-width: 280px;
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -37,7 +38,7 @@ const LinkStyle = styled(Link)`
   }
 
   &:active {
-    color: ##8ECA62;
+    color: #8ECA62;
     font-weight: 400;
   }
 `;
