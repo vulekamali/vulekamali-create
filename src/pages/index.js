@@ -1,11 +1,10 @@
 import React from 'react';
 import Header from '../components/header';
-import AppWrapper from '../components/AppWrapper';
 
 const IndexPage = () => (
-  <AppWrapper>
+  <React.Fragment>
     <Header />
-  </AppWrapper>
+  </React.Fragment>
 );
 
 export default IndexPage;

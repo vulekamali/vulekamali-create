@@ -24,7 +24,7 @@ const LinkStyle = styled(Link)`
   text-decoration: none;
   color: #fff;
   text-transform: Uppercase;
-  
+  font-family: Lato;
 `;
 
 
