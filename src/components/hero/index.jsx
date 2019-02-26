@@ -62,31 +62,6 @@ const Text = styled(Typography)`
   }
 `;
 
-const CardWrapper = styled(Card)`
-  max-width: 280px;
-  height: 625px;
-
-  @media screen and (min-width: 450px) {
-    max-width: 380px;
-    height: 560px;
-  }
-
-  @media screen and (min-width: 650px) {
-    max-width: 500px;
-    height: 480px;
-  }
-
-  @media screen and (min-width: 850px) {
-    max-width: 800px;
-    height: 400px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    max-width: 1000px;
-    height: 425px;
-  }
-`;
-
 const CardContainer = styled(CardContent)`
   display: flex;
   flex-direction: column;
@@ -227,7 +202,7 @@ const ImageStyle = styled.div`
 `;
 
 const callEventCard = () => (
-  <CardWrapper>
+  <Card>
     <CardContainer>
       <TextContainer>
         <Date>30 February 2019</Date>
@@ -251,7 +226,7 @@ const callEventCard = () => (
         <ImageStyle />
       </ImageContainer>
     </CardContainer>
-  </CardWrapper>
+  </Card>
 );
 
 const Hero = () => (
