@@ -3,23 +3,8 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   width: 100%;
-  max-width: 280px;
-
-  @media screen and (min-width: 450px) {
-    max-width: 380px;
-  }
-
-  @media screen and (min-width: 650px) {
-    max-width: 500px;
-  }
-
-  @media screen and (min-width: 850px) {
-    max-width: 700px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    max-width: 1066px;
-  }
+  max-width: 1000px;
+  margin: 0  20px;
 `;
 
 const ContainerLayout = ({ children }) => (
