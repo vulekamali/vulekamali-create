@@ -155,10 +155,11 @@ const ButtonStyle = styled(Button)`
   height: 36px;
   color: rgba(36, 56, 88, 0.7);
   font-family: Lato;
-  font-size: 10px;
+  font-size: 14px;
+  line-height: normal;
   font-weight: 700;
   text-align: center;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.035em;
   margin-top: 12px;
   margin-right: 8px;
 
@@ -172,10 +173,11 @@ const ActionPackButton = styled(Button)`
   height: 36px;
   color: #fff;
   font-family: Lato;
-  font-size: 10px;
+  font-size: 14px;
+  line-height: normal;
   font-weight: 700;
   text-align: center;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.035em;
   margin-top: 12px;
 
   && {
@@ -206,12 +208,12 @@ const ImageStyle = styled.div`
 
   @media screen and (min-width: 850px) {
     border-radius: 50%;
-    height: 70%;
+    height: 65%;
   }
 
   @media screen and (min-width: 1024px) {
-    height: 80%;
-    width: 85%;
+    height: 300px;
+    width: 300px;
   }
 `;
 
@@ -247,7 +249,7 @@ const MainEventCard = () => (
                 <ButtonStyle>Judging Criteria</ButtonStyle>
               </Link>
               <Link href="https://docs.google.com/presentation/u/1/d/1gc5p2pwCX-B90VIUws7QGfZVmidMC8GIF7r9VRd_tAU/export/pdf" target="_blank">
-                <ActionPackButton>Get Started</ActionPackButton>
+                <ActionPackButton variant="contained">Get Started</ActionPackButton>
               </Link>
             </ButtonsGroup>
           </TextContainer>
