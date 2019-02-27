@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import {
   Typography, Card, CardContent, Button,
 } from '@material-ui/core';
+import LocationIcon from '@material-ui/icons/LocationOn'; 
+import CalendarIcon from '@material-ui/icons/DateRange'; 
 import ContainerLayout from '../containerLayout';
 import imageHack from '../../images/background.jpg';
 
@@ -34,6 +36,17 @@ const TextContainer = styled.div`
   padding: 20px;
 `;
 
+const DateGroup = styled.div`
+  display: flex;
+  align-items: center;
+  padding-bottom: 8px;
+`;
+
+const DateIconStyled = styled(CalendarIcon)`
+  color: #42526E;
+  padding-right: 8px;
+`;
+
 const Date = styled(Typography)`
   font-family: Lato;
   color: #42526E;
@@ -41,7 +54,6 @@ const Date = styled(Typography)`
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.05em;
-  padding-bottom: 8px;
 
   @media screen and (min-width: 650px) {
     font-size: 14px;
@@ -62,7 +74,7 @@ const Title = styled(Typography)`
   font-size: 35px;
   font-weight: 700;
   line-height: 40px;
-  padding-bottom: 8px;
+  padding-bottom: 14px;
 
   @media screen and (min-width: 850px) {
     font-size: 42px;
@@ -75,6 +87,31 @@ const Title = styled(Typography)`
   @media screen and (min-width: 1024px) {
     font-size: 50px;
     line-height: 57px;
+  }
+`;
+
+const LocationItems = styled.div`
+  display flex;
+  align-items: center;
+  padding-bottom: 14px;
+`;
+
+const LocationIconStyled = styled(LocationIcon)`
+  color: #42526E;
+  padding-right: 5px;
+`;
+
+const Location = styled(Typography)`
+  font-family: Lato;
+  color: #42526E;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.05em;
+
+  @media screen and (min-width: 650px) {
+    font-size: 14px;
+    font-weight: 900;
   }
 `;
 
@@ -98,10 +135,20 @@ const Paragraph = styled(Typography)`
   }
 `;
 
+const ButtonsGroup = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 450px;
+
+  @media screen and (min-width: 550px) {
+    flex-direction: row;
+  }
+`;
+
 const Link = styled.a`
   text-decoration: none;
   border-radius: 2px;
-  height: 40px;
 `;
 
 const ButtonStyle = styled(Button)`
@@ -117,6 +164,22 @@ const ButtonStyle = styled(Button)`
 
   && {
     background-color: #AD3C64;
+  }
+`;
+
+const ActionPackButton = styled(Button)`
+  min-width: 200px;
+  height: 36px;
+  color: #fff;
+  font-family: Lato;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.4em;
+  margin-top: 12px;
+
+  && {
+    background-color: #8ECA62;
   }
 `;
 
@@ -158,22 +221,32 @@ const MainEventCard = () => (
       <Card>
         <CardContainer>
           <TextContainer>
-            <Date>30 February 2019</Date>
+            <DateGroup>
+              <DateIconStyled />
+              <Date>01 - 02 March 2019</Date>
+            </DateGroup>
             <Underline />
-            <Title>Eastern Cape DataQuest</Title>
+            <Title>Better Budget Dataquest Northern Cape</Title>
+            <LocationItems>
+              <LocationIconStyled />
+              <Location>Sol Plaatje University, Kimberley, Northern Cape</Location>
+            </LocationItems>
             <Paragraph>
-              Join developers, students, enterpreneurs and data experts at a vulekamali
-              hackathon. Build websites, mobile apps and other tools using the data and APIs
-              behind vulekamali.
+              Explore the spending data, and come up with findings or indications under one category of gender, inequality or the environment.
+              Contextualize the spending with other data available to you.
             </Paragraph>
             <Paragraph>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget libero
-              odio. Vivamus fermentum ut purus vel feugiat. Integer fringilla leo at dolor scelerisque
-              vestibulum. Morbi porttitor ligula non malesuada rhoncus. Ut sit amet mi nisl.
+              Get together your team of up to 5, or find them on the day. At the end, present your multimedia piece, the start of a research project,
+              a data story, or other creative ideas to the judges and the world.
             </Paragraph>
-            <Link href="https://create.vulekamali.gov.za/">
-              <ButtonStyle>Add your project</ButtonStyle>
-            </Link>
+            <ButtonsGroup>
+              <Link href="https://hackdash.org/dashboards/vulekamali" target="_blank">
+                <ButtonStyle>Projects</ButtonStyle>
+              </Link>
+              <Link href="https://docs.google.com/presentation/u/1/d/1gc5p2pwCX-B90VIUws7QGfZVmidMC8GIF7r9VRd_tAU/export/pdf" target="_blank">
+                <ActionPackButton>View Action Pack</ActionPackButton>
+              </Link>
+            </ButtonsGroup>
           </TextContainer>
           <ImageContainer>
             <ImageStyle />
