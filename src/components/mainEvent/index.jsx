@@ -139,9 +139,8 @@ const ButtonsGroup = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 450px;
 
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 650px) {
     flex-direction: row;
   }
 `;
@@ -154,16 +153,18 @@ const Link = styled.a`
 const ButtonStyle = styled(Button)`
   min-width: 200px;
   height: 36px;
-  color: #fff;
+  color: rgba(36, 56, 88, 0.7);
   font-family: Lato;
-  font-size: 10px;
+  font-size: 14px;
+  line-height: normal;
   font-weight: 700;
   text-align: center;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.035em;
   margin-top: 12px;
+  margin-right: 8px;
 
   && {
-    background-color: #AD3C64;
+    background-color: rgba(0, 0, 0, 0.12);
   }
 `;
 
@@ -172,14 +173,15 @@ const ActionPackButton = styled(Button)`
   height: 36px;
   color: #fff;
   font-family: Lato;
-  font-size: 10px;
+  font-size: 14px;
+  line-height: normal;
   font-weight: 700;
   text-align: center;
-  letter-spacing: 0.4em;
+  letter-spacing: 0.035em;
   margin-top: 12px;
 
   && {
-    background-color: #8ECA62;
+    background-color: #AD3C64;
   }
 `;
 
@@ -206,12 +208,12 @@ const ImageStyle = styled.div`
 
   @media screen and (min-width: 850px) {
     border-radius: 50%;
-    height: 70%;
+    height: 65%;
   }
 
   @media screen and (min-width: 1024px) {
-    height: 80%;
-    width: 85%;
+    height: 300px;
+    width: 300px;
   }
 `;
 
@@ -243,8 +245,11 @@ const MainEventCard = () => (
               <Link href="https://hackdash.org/dashboards/vulekamali" target="_blank">
                 <ButtonStyle>Projects</ButtonStyle>
               </Link>
+              <Link href="https://docs.google.com/document/d/1sVMD4OJHuOClKSVuA2Cj57vXR0AiaDtux5m7Re510tI/export?format=pdf" target="_blank">
+                <ButtonStyle>Judging Criteria</ButtonStyle>
+              </Link>
               <Link href="https://docs.google.com/presentation/u/1/d/1gc5p2pwCX-B90VIUws7QGfZVmidMC8GIF7r9VRd_tAU/export/pdf" target="_blank">
-                <ActionPackButton>View Action Pack</ActionPackButton>
+                <ActionPackButton variant="contained">Get Started</ActionPackButton>
               </Link>
             </ButtonsGroup>
           </TextContainer>
