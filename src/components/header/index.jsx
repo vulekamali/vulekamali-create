@@ -52,13 +52,16 @@ const Header = ({ links }) => (
   <Wrapper>
     <ContainerLayout>
       <ListContainer>
-        {links.map(({ item, link }) => (
-          <List>
-            <LinkStyle key={item} to={link}>
-              {item}
-            </LinkStyle>
-          </List>
-        ))}
+      <List>
+        <LinkStyle to="/">
+          Vulekamali Create
+        </LinkStyle>
+      </List>
+      <List>
+        <LinkStyle to="https://vulekamali.gov.za/">
+          Vulekamali
+        </LinkStyle>
+      </List>
       </ListContainer>
     </ContainerLayout>
   </Wrapper>
