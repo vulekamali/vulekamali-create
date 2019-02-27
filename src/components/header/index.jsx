@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import styled from 'styled-components';
 import ContainerLayout from '../containerLayout';
 
@@ -24,7 +23,7 @@ const List = styled.li`
   text-align: center;
 `;
 
-const LinkStyle = styled(Link)`
+const LinkStyle = styled.a`
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
   text-transform: Uppercase;
@@ -48,17 +47,17 @@ const LinkStyle = styled(Link)`
   }
 `;
 
-const Header = ({ links }) => (
+const Header = () => (
   <Wrapper>
     <ContainerLayout>
       <ListContainer>
       <List>
-        <LinkStyle to="/">
+        <LinkStyle href="/">
           Vulekamali Create
         </LinkStyle>
       </List>
       <List>
-        <LinkStyle to="https://vulekamali.gov.za/">
+        <LinkStyle href="https://vulekamali.gov.za/" target="_blank">
           Vulekamali
         </LinkStyle>
       </List>
