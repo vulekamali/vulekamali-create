@@ -49,7 +49,7 @@ const GlobalStyle = createGlobalStyle`
     color: #42526 !important;
   }
 
-  [contenteditable="false"] {
+  #LB24 [contenteditable="false"] {
     display: flex;
     justify-content: center;
     width: 100%;
