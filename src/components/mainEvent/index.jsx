@@ -54,6 +54,7 @@ const Date = styled(Typography)`
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.05em;
+  text-transform: Uppercase;
 
   @media screen and (min-width: 650px) {
     font-size: 14px;
