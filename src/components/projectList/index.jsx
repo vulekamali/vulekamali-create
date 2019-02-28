@@ -187,35 +187,6 @@ class ProjectList extends Component {
     </ProjectWrapper>
   ));
 
-//   callProjectLists = projects => projects.map(({
-//     contributors,
-//     title,
-//     description,
-//     cover,
-//     _id: id
-//   }) => {
-//     return (
-//       <ProjectWrapper key={id}>
-//         <Card>
-//           <ProjectContent>
-//             <ImageContainer>
-//               <ImageStyle {...{ cover }} />
-//             </ImageContainer>
-//             <TextContainer>
-//               <Contributor>{contributors.length} Contributor</Contributor>
-//               <Underline />
-//               <Title>{title}</Title>
-//               <Paragraph>{description.length > 70 ? `${description.substring(0, 70)}...` : description  }</Paragraph>
-//               <Link href={`https://hackdash.org/projects/${id}`} target="_blank">
-//                 <ButtonStyle>Learn More</ButtonStyle>
-//               </Link>
-//             </TextContainer>
-//           </ProjectContent>
-//         </Card>
-//       </ProjectWrapper>
-//     );
-// });
-
   render() {
     const { projects } = this.state;
     return (
@@ -224,9 +195,6 @@ class ProjectList extends Component {
           <Heading>Projects</Heading>
           <ProjectsContainer>
             {this.callProjectLists(projects)}
-            {/* {this.filteredProjects(projects)} */}
-            {console.log(projects)}
-            {/* {filteredProjects(projects)} */}
           </ProjectsContainer>
         </ContainerLayout>
       </Wrapper>
