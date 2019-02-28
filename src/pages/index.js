@@ -4,6 +4,7 @@ import Header from '../components/header';
 import Hero from '../components/hero';
 import Footer from '../components/footer';
 import MainEventCard from '../components/mainEvent';
+import ProjectList from '../components/projectList';
 import MicroBlog from '../components/microBlog';
 
 const IndexPage = () => (
@@ -18,6 +19,7 @@ const IndexPage = () => (
     <Header />
     <Hero />
     <MainEventCard />
+    <ProjectList />
     <MicroBlog />
     <Footer />
   </React.Fragment>
