@@ -160,6 +160,8 @@ class ProjectList extends Component {
     );
   }
 
+  filterProjectLists = projects => projects.filter(({ tags }) => tags[0] === 'northern cape');
+
   callProjectLists = projects => projects.map(({
     contributors,
     title,
@@ -173,7 +175,6 @@ class ProjectList extends Component {
           <ProjectContent>
             <ImageContainer>
               <ImageStyle {...{ cover }} />
-              {console.log(cover)}
             </ImageContainer>
             <TextContainer>
               <Contributor>{contributors.length} Contributor</Contributor>
