@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import {
   Typography, Card, CardContent, Button,
 } from '@material-ui/core';
-import LocationIcon from '@material-ui/icons/LocationOn'; 
-import CalendarIcon from '@material-ui/icons/DateRange'; 
+import LocationIcon from '@material-ui/icons/LocationOn';
+import CalendarIcon from '@material-ui/icons/DateRange';
 import ContainerLayout from '../containerLayout';
 import imageHack from '../../images/background.jpg';
 
@@ -249,7 +249,7 @@ const MainEventCard = () => (
               <Link href="https://docs.google.com/document/d/1sVMD4OJHuOClKSVuA2Cj57vXR0AiaDtux5m7Re510tI/export?format=pdf" target="_blank">
                 <ButtonStyle>Judging Criteria</ButtonStyle>
               </Link>
-              <Link href="https://docs.google.com/presentation/u/1/d/1gc5p2pwCX-B90VIUws7QGfZVmidMC8GIF7r9VRd_tAU/export/pdf" target="_blank">
+              <Link href="https://s3-eu-west-1.amazonaws.com/manual-uploads.vulekamali.gov.za/events/Vulekamali+BetterBudgetSA+Dataquest+NC%2C+01+-+02+March.pdf" target="_blank">
                 <ActionPackButton variant="contained">Get Started</ActionPackButton>
               </Link>
             </ButtonsGroup>
