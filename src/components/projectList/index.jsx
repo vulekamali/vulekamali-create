@@ -4,8 +4,10 @@ import {
   Typography,
   Card,
   CardContent,
-  Button
+  Button,
+  Fab
 } from '@material-ui/core';
+import AddIcon from '@material-ui/icons/Add';
 import ContainerLayout from '../containerLayout';
 
 const Wrapper = styled.div`
@@ -22,11 +24,25 @@ const Heading = styled(Typography)`
   font-size: 25px;
   letter-spacing: 0.01em;
   color: #243858;
-  margin-bottom: 20px;
 
   @media screen and (min-width: 650px) {
     font-size: 35px;
   }
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+`;
+
+const AddButton = styled(Fab)`
+  background-color: #AD3C64
+`;
+
+const AddIconStyled = styled(AddIcon)`
+  color: #fff;
 `;
 
 const ProjectsContainer = styled.div`
@@ -192,7 +208,14 @@ class ProjectList extends Component {
     return (
       <Wrapper>
         <ContainerLayout>
-          <Heading>Projects</Heading>
+          <ButtonContainer>
+            <Heading>Projects</Heading>
+            <Link href="https://hackdash.org/dashboards/vulekamali" target="_blank">
+              <AddButton aria-label="Add">
+                <AddIconStyled />
+              </AddButton>
+            </Link>
+          </ButtonContainer>
           <ProjectsContainer>
             {this.callProjectLists(projects)}
           </ProjectsContainer>
