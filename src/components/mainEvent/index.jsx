@@ -244,7 +244,7 @@ const MainEventCard = () => (
             </Paragraph>
             <ButtonsGroup>
               <Link href="https://hackdash.org/dashboards/vulekamali" target="_blank">
-                <ButtonStyle>Projects</ButtonStyle>
+                <ButtonStyle>Add Your Project</ButtonStyle>
               </Link>
               <Link href="https://docs.google.com/document/d/1sVMD4OJHuOClKSVuA2Cj57vXR0AiaDtux5m7Re510tI/export?format=pdf" target="_blank">
                 <ButtonStyle>Judging Criteria</ButtonStyle>
