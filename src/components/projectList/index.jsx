@@ -24,7 +24,6 @@ const Heading = styled(Typography)`
   font-size: 25px;
   letter-spacing: 0.01em;
   color: #243858;
-  // margin-bottom: 20px;
 
   @media screen and (min-width: 650px) {
     font-size: 35px;
@@ -209,8 +208,8 @@ class ProjectList extends Component {
     return (
       <Wrapper>
         <ContainerLayout>
-        <ButtonContainer>
-          <Heading>Projects</Heading>
+          <ButtonContainer>
+            <Heading>Projects</Heading>
             <Link href="https://hackdash.org/dashboards/vulekamali" target="_blank">
               <AddButton aria-label="Add">
                 <AddIconStyled />
