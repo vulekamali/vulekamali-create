@@ -9,6 +9,7 @@ import {
 } from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';
 import ContainerLayout from '../containerLayout';
+import backgroundPattern from '../../images/floating-cogs.svg';
 
 const Wrapper = styled.div`
   display: flex;
@@ -73,12 +74,13 @@ const ProjectContent = styled(CardContent)`
 const ImageContainer = styled.div`
   width: 100%;
   height: 220px;
+  background-color: rgba(0, 0, 0, 0.12);
 `;
 
 const ImageStyle = styled.div`
-  background-image: ${({ cover }) => (cover ? `url('${cover}')` : `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E")`)};
-  background-color: rgba(0, 0, 0, 0.12);
+  background-image: ${({ cover }) => (cover ? `url('${cover}')` : `url('${backgroundPattern}')` )};
   background-size: ${({ cover }) => (cover ? `cover` : `none`)};
+  opacity: ${({ cover }) => (cover ? `1` : `0.2`)};
   background-position: center;
   width: 100%;
   height: 100%;
