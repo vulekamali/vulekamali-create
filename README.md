@@ -33,7 +33,7 @@ This project is using Gatsby.js. You can run the following scripts in root folde
 
 
 #### Note
-- This project makes use of **Styled Components** for styling purposes.
+- This project makes use of **Styled Components** for styling purposes as well as **Material UI** components.
 - When adding to the project, please follow the folder and file structure already in place.
 - A component has been placed into a new folder containing and `index.jsx` file.
 - This project is following the *eslint-config-airbnb* style guide.
