@@ -15,7 +15,7 @@
 1. Please review the [branches](https://github.com/agis/git-style-guide) and [commits](https://github.com/agis/git-style-guide) sections in the following [documentation](https://github.com/agis/git-style-guide).
 
 ### ❤️ 3. Contribute
-1. Create a new branch in accordance with the above (skip this step if you are contributing on a specific branch)
+1. Create a new branch before adding a new feature (skip this step if you are contributing on a specific branch)
 
 ### 🚀 3. Make a pull request
 1. If you are making a public pull request (i.e. you do not have write access) use the [forking Git workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow).
