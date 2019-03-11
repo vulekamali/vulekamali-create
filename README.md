@@ -11,7 +11,7 @@
 3. Make sure you have the latest release of [Yarn](https://yarnpkg.com/en/docs/install) installed.
 4. Run `yarn` in the root folder of the repository to install all dependancies.
 
-#### Standard React Environment
+#### Standard React Environment (Gatsby)
 
 This project is using Gatsby.js. You can run the following scripts in root folder:
 
@@ -30,3 +30,10 @@ This project is using Gatsby.js. You can run the following scripts in root folde
 3. Make a [pull request](https://www.atlassian.com/git/tutorials/making-a-pull-request) via the [Github](#github) dashboard to the `master` branch.
 4. The designated owner of the repository will automatically be tagged in all pull requests via the `docs/CODEOWNERS` file.
 5. Once your code has been accepted and merged into `master` [Netlify](#netlify) will automatically deploy the changes to [create.vulekamali.gov.za/](https://create.vulekamali.gov.za/).
+
+
+#### Note
+- This project makes use of **Styled Components** for styling purposes.
+- When adding to the project, please follow the folder and file structure already in place.
+- A component has been placed into a new folder containing and `index.jsx` file.
+- This project is following the *eslint-config-airbnb* style guide.
