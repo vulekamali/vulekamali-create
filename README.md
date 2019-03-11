@@ -11,6 +11,13 @@
 3. Make sure you have the latest release of [Yarn](https://yarnpkg.com/en/docs/install) installed.
 4. Run `yarn` in the root folder of the repository to install all dependancies.
 
+#### Standard React Environment
+
+This project is using Gatsby.js. You can run the following scripts in root folder:
+
+- `yarn start`: This will open the project on your [localhost:8000](http://localhost:8000/)
+- `yarn build`: Builds the production JavaScript file that needs to be added to the existing Vulekamali Create stack.
+
 ### 👓 2. Read our documentation
 1. Please review the [branches](https://github.com/agis/git-style-guide) and [commits](https://github.com/agis/git-style-guide) sections in the following [documentation](https://github.com/agis/git-style-guide).
 
