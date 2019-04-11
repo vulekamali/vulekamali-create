@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+
   .lb24-default-list-item-title {
     color: #243858 !important;
     font-size: 12px !important;
