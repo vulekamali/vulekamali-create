@@ -12,6 +12,7 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
+        <link rel="stylesheet" href="/micro-blog.css" />
         <script src="https://v.24liveblog.com/24.js" defer></script>
       </head>
       <body {...props.bodyAttributes}>
