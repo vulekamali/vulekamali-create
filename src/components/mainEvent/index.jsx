@@ -7,7 +7,6 @@ import LocationIcon from '@material-ui/icons/LocationOn';
 import CalendarIcon from '@material-ui/icons/DateRange';
 import ContainerLayout from '../containerLayout';
 import imageHack from '../../images/background.jpg';
-// import AppBar from '@material-ui/core/AppBar';
 
 const Wrapper = styled.div`
   width: 100%;
