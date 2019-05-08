@@ -3,40 +3,15 @@ const hardCodedHtml = `
   <div data-v-49f6cdc4="" eid="2200802748257424172">
     <div data-v-49f6cdc4="" class="lb24-liveblog-container">
       <div data-v-49f6cdc4="" class="lb24-default-container" type="0">
-        <div class="lb24-default-status-bar">
-          <div class="lb24-default-update-time lb24-default-update-time">
-            <span>
-              Last Updated: a month ago </span>
-          </div>
-          <div class="lb24-default-status-bar-items">
-            <div data-v-3380f334="" class="lb24-component-button lb24-component-volume" size="mini">
-              <div data-v-3380f334="" class="lb24-component-volume-icon el-icon-fa-volume-up">
-              </div>
-            </div>
-          </div>
-          <div class="lb24-default-status-bar-items">
-            <div data-v-3380f334="" class="lb24-component-button lb24-default-playback">
-              <i data-v-3380f334="" class="icon-24 icon-playback">
-              </i>
-            </div>
-          </div>
-          <div class="lb24-default-status-bar-items">
-            <div data-v-3380f334="" class="lb24-component-button lb24-default-sort">
-              ↓ </div>
-          </div>
-        </div>
         <div>
           <div data-background="" class="lb24-default-list-item lb24-news-list-item">
             <div class="lb24-list-item-highlight">
             </div>
             <div class="lb24-default-list-item-header">
-              <div class="lb24-default-list-item-date">
-                a month ago </div>
               <div class="lb24-default-list-item-title">
                 There is no solution, without a problem. </div>
               <div class="lb24-default-list-item-editor">
                 <a>
-                  <img src="/default-avatar.png" alt="Cheslin van wyk">
                   <span>
                     Cheslin van wyk</span>
                 </a>
@@ -101,12 +76,9 @@ const hardCodedHtml = `
             </div>
             <div data-v-6e60cc20="" class="lb24-liveblog-comments-list">
               <div data-v-38e8791f="" data-v-6e60cc20="" class="lb24-liveblog-comments-item">
-                <img data-v-38e8791f="" src="/images/anonymous-user-2.png" alt="avatar" class="lb24-liveblog-comments-item-avatar">
                 <div data-v-38e8791f="" class="lb24-liveblog-comments-item-header">
                   <div data-v-38e8791f="" class="lb24-liveblog-comments-item-uname">
                     Calyn </div>
-                  <div data-v-38e8791f="" class="lb24-liveblog-comments-item-date" style="display: none;">
-                    a month ago </div>
                 </div>
                 <div data-v-38e8791f="" class="lb24-liveblog-comments-item-content">
                   I think this is a good idea - if citizens have the information they can hold the health department for under-spending and over-spending in certain areas. If we know where the budget should be spent, we can work with and partner with the department to achieve its budget spending goals #participatorybudgeting </div>
@@ -135,13 +107,10 @@ const hardCodedHtml = `
             <div class="lb24-list-item-highlight">
             </div>
             <div class="lb24-default-list-item-header">
-              <div class="lb24-default-list-item-date">
-                a month ago </div>
               <div class="lb24-default-list-item-title">
                 Road Infrastructure Development Provides A Better Environment </div>
               <div class="lb24-default-list-item-editor">
                 <a>
-                  <img src="/default-avatar.png" alt="sylvestermolawa">
                   <span>
                     sylvestermolawa</span>
                 </a>
@@ -202,12 +171,9 @@ const hardCodedHtml = `
             </div>
             <div data-v-6e60cc20="" class="lb24-liveblog-comments-list">
               <div data-v-38e8791f="" data-v-6e60cc20="" class="lb24-liveblog-comments-item">
-                <img data-v-38e8791f="" src="/images/anonymous-user-1.png" alt="avatar" class="lb24-liveblog-comments-item-avatar">
                 <div data-v-38e8791f="" class="lb24-liveblog-comments-item-header">
                   <div data-v-38e8791f="" class="lb24-liveblog-comments-item-uname">
                     Supporter </div>
-                  <div data-v-38e8791f="" class="lb24-liveblog-comments-item-date" style="display: none;">
-                    a month ago </div>
                 </div>
                 <div data-v-38e8791f="" class="lb24-liveblog-comments-item-content">
                   Great idea. Makes me think it would also be good if the same citizens who reported a fault can also confirm that it\'s done properly so that the contractors don\'t get paid for doing a shoddy job. </div>
@@ -231,12 +197,9 @@ const hardCodedHtml = `
                 </div>
               </div>
               <div data-v-38e8791f="" data-v-6e60cc20="" class="lb24-liveblog-comments-item">
-                <img data-v-38e8791f="" src="https://pbs.twimg.com/profile_images/1052196836428136450/3gLclO_3_normal.jpg" alt="avatar" class="lb24-liveblog-comments-item-avatar">
                 <div data-v-38e8791f="" class="lb24-liveblog-comments-item-header">
                   <div data-v-38e8791f="" class="lb24-liveblog-comments-item-uname">
                     vulekamali </div>
-                  <div data-v-38e8791f="" class="lb24-liveblog-comments-item-date" style="display: none;">
-                    a month ago </div>
                 </div>
                 <div data-v-38e8791f="" class="lb24-liveblog-comments-item-content">
                   #potholesmustfall </div>
@@ -267,13 +230,10 @@ const hardCodedHtml = `
             <div class="lb24-list-item-highlight">
             </div>
             <div class="lb24-default-list-item-header">
-              <div class="lb24-default-list-item-date">
-                a month ago </div>
               <div class="lb24-default-list-item-title">
                 Land for the landless </div>
               <div class="lb24-default-list-item-editor">
                 <a>
-                  <img src="/default-avatar.png" alt="201800912">
                   <span>
                     201800912</span>
                 </a>
@@ -354,12 +314,9 @@ const hardCodedHtml = `
             </div>
             <div data-v-6e60cc20="" class="lb24-liveblog-comments-list">
               <div data-v-38e8791f="" data-v-6e60cc20="" class="lb24-liveblog-comments-item">
-                <img data-v-38e8791f="" src="/images/anonymous-user-2.png" alt="avatar" class="lb24-liveblog-comments-item-avatar">
                 <div data-v-38e8791f="" class="lb24-liveblog-comments-item-header">
                   <div data-v-38e8791f="" class="lb24-liveblog-comments-item-uname">
                     Calyn </div>
-                  <div data-v-38e8791f="" class="lb24-liveblog-comments-item-date" style="display: none;">
-                    a month ago </div>
                 </div>
                 <div data-v-38e8791f="" class="lb24-liveblog-comments-item-content">
                   I think this is a good idea - there is a lot of interest around housing especially since it represents the spatial segregation of Apartheid and colonialism. Allowing CSO and citizens to have access to information about housing developments is useful. </div>
@@ -388,12 +345,9 @@ const hardCodedHtml = `
                     1 replies</span>
                 </div>
                 <div data-v-38e8791f="" data-v-6e60cc20="" class="lb24-liveblog-comments-item">
-                  <img data-v-38e8791f="" src="/images/anonymous-user-2.png" alt="avatar" class="lb24-liveblog-comments-item-avatar">
                   <div data-v-38e8791f="" class="lb24-liveblog-comments-item-header">
                     <div data-v-38e8791f="" class="lb24-liveblog-comments-item-uname">
                       Calyn </div>
-                    <div data-v-38e8791f="" class="lb24-liveblog-comments-item-date" style="display: none;">
-                      a month ago </div>
                   </div>
                   <div data-v-38e8791f="" class="lb24-liveblog-comments-item-content">
                     People who are waiting on Social housing lists can track and compare against the number of houses built and their position on the waiting this ensuring accountability for housing allocations. </div>
@@ -414,12 +368,9 @@ const hardCodedHtml = `
                 </div>
               </div>
               <div data-v-38e8791f="" data-v-6e60cc20="" class="lb24-liveblog-comments-item">
-                <img data-v-38e8791f="" src="https://pbs.twimg.com/profile_images/1052196836428136450/3gLclO_3_normal.jpg" alt="avatar" class="lb24-liveblog-comments-item-avatar">
                 <div data-v-38e8791f="" class="lb24-liveblog-comments-item-header">
                   <div data-v-38e8791f="" class="lb24-liveblog-comments-item-uname">
                     vulekamali </div>
-                  <div data-v-38e8791f="" class="lb24-liveblog-comments-item-date" style="display: none;">
-                    a month ago </div>
                 </div>
                 <div data-v-38e8791f="" class="lb24-liveblog-comments-item-content">
                   What will the tool be? </div>
@@ -448,13 +399,10 @@ const hardCodedHtml = `
             <div class="lb24-list-item-highlight">
             </div>
             <div class="lb24-default-list-item-header">
-              <div class="lb24-default-list-item-date">
-                a month ago </div>
               <div class="lb24-default-list-item-title">
                 BudgetBreakdown </div>
               <div class="lb24-default-list-item-editor">
                 <a>
-                  <img src="/default-avatar.png" alt="201709570">
                   <span>
                     201709570</span>
                 </a>
@@ -524,12 +472,9 @@ const hardCodedHtml = `
             </div>
             <div data-v-6e60cc20="" class="lb24-liveblog-comments-list">
               <div data-v-38e8791f="" data-v-6e60cc20="" class="lb24-liveblog-comments-item">
-                <img data-v-38e8791f="" src="https://pbs.twimg.com/profile_images/1052196836428136450/3gLclO_3_normal.jpg" alt="avatar" class="lb24-liveblog-comments-item-avatar">
                 <div data-v-38e8791f="" class="lb24-liveblog-comments-item-header">
                   <div data-v-38e8791f="" class="lb24-liveblog-comments-item-uname">
                     vulekamali </div>
-                  <div data-v-38e8791f="" class="lb24-liveblog-comments-item-date" style="display: none;">
-                    a month ago </div>
                 </div>
                 <div data-v-38e8791f="" class="lb24-liveblog-comments-item-content">
                   Will you show the increase /decrease in the budget over time? </div>
@@ -553,12 +498,9 @@ const hardCodedHtml = `
                 </div>
               </div>
               <div data-v-38e8791f="" data-v-6e60cc20="" class="lb24-liveblog-comments-item">
-                <img data-v-38e8791f="" src="/images/anonymous-user-2.png" alt="avatar" class="lb24-liveblog-comments-item-avatar">
                 <div data-v-38e8791f="" class="lb24-liveblog-comments-item-header">
                   <div data-v-38e8791f="" class="lb24-liveblog-comments-item-uname">
                     Calyn </div>
-                  <div data-v-38e8791f="" class="lb24-liveblog-comments-item-date" style="display: none;">
-                    a month ago </div>
                 </div>
                 <div data-v-38e8791f="" class="lb24-liveblog-comments-item-content">
                   Looking forward to hearing about all the opportunities for women in science you\'ve found! </div>
@@ -587,8 +529,6 @@ const hardCodedHtml = `
             <div class="lb24-list-item-highlight">
             </div>
             <div class="lb24-default-list-item-header">
-              <div class="lb24-default-list-item-date">
-                a month ago </div>
               <div class="lb24-default-list-item-title">
                 BBM - Better Budget Movement </div>
               <div class="lb24-default-list-item-editor">
@@ -652,12 +592,9 @@ const hardCodedHtml = `
             </div>
             <div data-v-6e60cc20="" class="lb24-liveblog-comments-list">
               <div data-v-38e8791f="" data-v-6e60cc20="" class="lb24-liveblog-comments-item">
-                <img data-v-38e8791f="" src="/images/anonymous-user-2.png" alt="avatar" class="lb24-liveblog-comments-item-avatar">
                 <div data-v-38e8791f="" class="lb24-liveblog-comments-item-header">
                   <div data-v-38e8791f="" class="lb24-liveblog-comments-item-uname">
                     Calyn </div>
-                  <div data-v-38e8791f="" class="lb24-liveblog-comments-item-date" style="display: none;">
-                    a month ago </div>
                 </div>
                 <div data-v-38e8791f="" class="lb24-liveblog-comments-item-content">
                   Glad to see all the hard work happening at the #BetterBudgetSA #Dataquest </div>
@@ -686,8 +623,6 @@ const hardCodedHtml = `
             <div class="lb24-list-item-highlight">
             </div>
             <div class="lb24-default-list-item-header">
-              <div class="lb24-default-list-item-date">
-                a month ago </div>
               <div class="lb24-default-list-item-title">
                 International Open Data Day: All Hands-On In Kimberley </div>
               <div class="lb24-default-list-item-editor">
@@ -757,12 +692,9 @@ const hardCodedHtml = `
             </div>
             <div data-v-6e60cc20="" class="lb24-liveblog-comments-list">
               <div data-v-38e8791f="" data-v-6e60cc20="" class="lb24-liveblog-comments-item">
-                <img data-v-38e8791f="" src="/images/anonymous-user-2.png" alt="avatar" class="lb24-liveblog-comments-item-avatar">
                 <div data-v-38e8791f="" class="lb24-liveblog-comments-item-header">
                   <div data-v-38e8791f="" class="lb24-liveblog-comments-item-uname">
                     Calyn </div>
-                  <div data-v-38e8791f="" class="lb24-liveblog-comments-item-date" style="display: none;">
-                    a month ago </div>
                 </div>
                 <div data-v-38e8791f="" class="lb24-liveblog-comments-item-content">
                   I\'ve never been to a hackathon before! This has been an exciting and creative experience. The participants have been working very hard. It is quite invigorating to see the time, energy and effort that is being directed towards using Vulekamali to solve a problem in inequality, gender or environment. </div>
@@ -791,13 +723,10 @@ const hardCodedHtml = `
             <div class="lb24-list-item-highlight">
             </div>
             <div class="lb24-default-list-item-header">
-              <div class="lb24-default-list-item-date">
-                a month ago </div>
               <div class="lb24-default-list-item-title">
                 Herex27s an example of something you could do! </div>
               <div class="lb24-default-list-item-editor">
                 <a>
-                  <img src="/default-avatar.png" alt="vulekamali">
                   <span>
                     vulekamali</span>
                 </a>
@@ -853,12 +782,9 @@ const hardCodedHtml = `
             </div>
             <div data-v-6e60cc20="" class="lb24-liveblog-comments-list">
               <div data-v-38e8791f="" data-v-6e60cc20="" class="lb24-liveblog-comments-item">
-                <img data-v-38e8791f="" src="/images/anonymous-user-2.png" alt="avatar" class="lb24-liveblog-comments-item-avatar">
                 <div data-v-38e8791f="" class="lb24-liveblog-comments-item-header">
                   <div data-v-38e8791f="" class="lb24-liveblog-comments-item-uname">
                     Calyn </div>
-                  <div data-v-38e8791f="" class="lb24-liveblog-comments-item-date" style="display: none;">
-                    a month ago </div>
                 </div>
                 <div data-v-38e8791f="" class="lb24-liveblog-comments-item-content">
                   Very Cool! was interesting to see the daily allocation of hours/labour​ that goes towards taxes! </div>
@@ -887,13 +813,10 @@ const hardCodedHtml = `
             <div class="lb24-list-item-highlight">
             </div>
             <div class="lb24-default-list-item-header">
-              <div class="lb24-default-list-item-date">
-                a month ago </div>
               <div class="lb24-default-list-item-title">
                 For the techies: How do you use the OpenSpending API? </div>
               <div class="lb24-default-list-item-editor">
                 <a>
-                  <img src="/default-avatar.png" alt="vulekamali">
                   <span>
                     vulekamali</span>
                 </a>
@@ -952,13 +875,10 @@ const hardCodedHtml = `
             <div class="lb24-list-item-highlight">
             </div>
             <div class="lb24-default-list-item-header">
-              <div class="lb24-default-list-item-date">
-                a month ago </div>
               <div class="lb24-default-list-item-title">
                 How do you familiarise yourself with a big dataset? </div>
               <div class="lb24-default-list-item-editor">
                 <a>
-                  <img src="/default-avatar.png" alt="vulekamali">
                   <span>
                     vulekamali</span>
                 </a>
@@ -1017,13 +937,10 @@ const hardCodedHtml = `
             <div class="lb24-list-item-highlight">
             </div>
             <div class="lb24-default-list-item-header">
-              <div class="lb24-default-list-item-date">
-                a month ago </div>
               <div class="lb24-default-list-item-title">
                 How to find datasets on vulekamali </div>
               <div class="lb24-default-list-item-editor">
                 <a>
-                  <img src="/default-avatar.png" alt="vulekamali">
                   <span>
                     vulekamali</span>
                 </a>
@@ -1083,10 +1000,6 @@ const hardCodedHtml = `
             </div>
           </div>
         </div>
-        <button data-v-0584f2d0="" type="button" class="el-button lb24-liveblog-loadmore el-button--default">
-          <span>
-            LOAD MORE </span>
-        </button>
       </div>
     </div>
   </div>
