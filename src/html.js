@@ -13,7 +13,6 @@ export default function HTML(props) {
         />
         {props.headComponents}
         <link rel="stylesheet" href="/micro-blog.css" />
-        <script src="https://v.24liveblog.com/24.js" defer></script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
