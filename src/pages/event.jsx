@@ -6,6 +6,7 @@ import Footer from '../components/footer';
 import MainEventCard from '../components/mainEvent';
 import ProjectList from '../components/projectList';
 import MicroBlog from '../components/microBlog';
+import copy from '../data/northernCape.json';
 
 const EventPage = () => (
   <React.Fragment>
@@ -18,7 +19,14 @@ const EventPage = () => (
     </Helmet>
     <Header />
     <Hero title="Event" />
-    <MainEventCard />
+    <MainEventCard
+      eventCopy={copy}
+      addProjectUrl="https://hackdash.org/dashboards/vulekamali"
+      criteriaUrl="https://docs.google.com/document/d/1sVMD4OJHuOClKSVuA2Cj57vXR0AiaDtux5m7Re510tI/export?format=pdf"
+      getStartedUrl="https://s3-eu-west-1.amazonaws.com/manual-uploads.vulekamali.gov.za/events/Vulekamali+BetterBudgetSA+Dataquest+NC%2C+01+-+02+March.pdf"
+      signupUrl="https://s3-eu-west-1.amazonaws.com/manual-uploads.vulekamali.gov.za/events/Vulekamali+BetterBudgetSA+Dataquest+NC%2C+01+-+02+March.pdf"
+      containsImage
+    />
     <ProjectList />
     <MicroBlog />
     <Footer />
