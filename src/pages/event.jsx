@@ -17,7 +17,7 @@ const EventPage = () => (
       <meta name="description" content="Explore the spending data, and come up with findings or indications under one category of gender, inequality or the environment. Contextualize the spending with other data available to you." />
     </Helmet>
     <Header />
-    <Hero />
+    <Hero title="Event" />
     <MainEventCard />
     <ProjectList />
     <MicroBlog />
