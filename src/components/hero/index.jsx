@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
+
 import { Typography } from '@material-ui/core';
 import ContainerLayout from '../containerLayout';
 
@@ -59,12 +61,16 @@ const Text = styled(Typography)`
   }
 `;
 
-const Hero = () => (
+const Hero = ({ title }) => (
   <Wrapper>
     <ContainerLayout>
-      <Text>Event</Text>
+      <Text>{title}</Text>
     </ContainerLayout>
   </Wrapper>
 );
 
 export default Hero;
+
+Hero.propTypes = {
+  title: PropTypes.string.isRequired,
+};
