@@ -11,8 +11,13 @@ const Wrapper = styled.div`
   justify-content: center;
 `;
 
+const NavItemsContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+`;
+
 const ListContainer = styled.ul`
-  max-width: 280px;
   display: flex;
   justify-content: space-between;
   padding: 0;
@@ -21,6 +26,19 @@ const ListContainer = styled.ul`
 const List = styled.li`
   list-style: none;
   text-align: center;
+  padding-right: 32px;
+`;
+
+const LeftItemsList = styled.li`
+  list-style: none;
+  text-align: center;
+  padding-right: 32px;
+`;
+
+const RightItemsList = styled.li`
+  list-style: none;
+  text-align: center;
+  padding-left: 32px;
 `;
 
 const LinkStyle = styled.a`
@@ -50,18 +68,32 @@ const LinkStyle = styled.a`
 const Header = () => (
   <Wrapper>
     <ContainerLayout>
-      <ListContainer>
-      <List>
-        <LinkStyle href="/">
-          Vulekamali Create
-        </LinkStyle>
-      </List>
-      <List>
-        <LinkStyle href="https://vulekamali.gov.za/" target="_blank">
-          Vulekamali
-        </LinkStyle>
-      </List>
-      </ListContainer>
+      <NavItemsContainer>
+        <ListContainer>
+          <LeftItemsList>
+            <LinkStyle href="/">
+              Vulekamali Create
+            </LinkStyle>
+          </LeftItemsList>
+          <List>
+            <LinkStyle href="https://vulekamali.gov.za/" target="_blank">
+              Vulekamali
+            </LinkStyle>
+          </List>
+        </ListContainer>
+        <ListContainer>
+          <List>
+            <LinkStyle href="needs-anchor-tag">
+              Upcoming Event
+            </LinkStyle>
+          </List>
+          <RightItemsList>
+            <LinkStyle href="needs-anchor-tag">
+              Previous Events
+            </LinkStyle>
+          </RightItemsList>
+        </ListContainer>
+      </NavItemsContainer>
     </ContainerLayout>
   </Wrapper>
 );
