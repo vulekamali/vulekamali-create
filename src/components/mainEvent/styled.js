@@ -12,14 +12,10 @@ const Wrapper = styled.div`
 `;
 
 const CardContainer = styled(CardContent)`
-  display: flex;
-  flex-direction: column;
   padding: 0;
   height: 100%;
 
   @media screen and (min-width: 850px) {
-    flex-direction: row;
-    justify-content: space-between;
     padding: 20px;
   }
 
@@ -29,6 +25,15 @@ const CardContainer = styled(CardContent)`
 `;
 
 const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 850px) {
+    flex-direction: row;
+  }
+`;
+
+const Description = styled.div`
   padding: 20px;
 `;
 
@@ -112,7 +117,7 @@ const Location = styled(Typography)`
   }
 `;
 
-const Paragraph = styled(Typography)`
+const DescriptionContainer = styled(Typography)`
   font-family: Lato;
   color: #42526E;
   font-size: 14px;
@@ -136,15 +141,21 @@ const ButtonsGroup = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0 20px;
 
   @media screen and (min-width: 650px) {
     flex-direction: row;
+    justify-content: flex-start;
   }
 `;
 
 const Link = styled.a`
   text-decoration: none;
   border-radius: 2px;
+
+  @media screen and (min-width: 650px) {
+    margin-right: 10px;
+  }
 `;
 
 const ButtonStyle = styled(Button)`
@@ -218,6 +229,7 @@ export {
   Wrapper,
   CardContainer,
   TextContainer,
+  Description,
   DateGroup,
   DateIconStyled,
   Date,
@@ -226,7 +238,7 @@ export {
   LocationItems,
   LocationIconStyled,
   Location,
-  Paragraph,
+  DescriptionContainer,
   ButtonsGroup,
   Link,
   ButtonStyle,
@@ -239,6 +251,7 @@ export default {
   Wrapper,
   CardContainer,
   TextContainer,
+  Description,
   DateGroup,
   DateIconStyled,
   Date,
@@ -247,7 +260,7 @@ export default {
   LocationItems,
   LocationIconStyled,
   Location,
-  Paragraph,
+  DescriptionContainer,
   ButtonsGroup,
   Link,
   ButtonStyle,

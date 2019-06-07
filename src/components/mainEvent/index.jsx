@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import ReactMarkdown from 'react-markdown';
 
 import { Card } from '@material-ui/core';
 import ContainerLayout from '../containerLayout';
@@ -8,6 +9,7 @@ import {
   Wrapper,
   CardContainer,
   TextContainer,
+  Description,
   DateGroup,
   DateIconStyled,
   Date,
@@ -16,7 +18,7 @@ import {
   LocationItems,
   LocationIconStyled,
   Location,
-  Paragraph,
+  DescriptionContainer,
   ButtonsGroup,
   Link,
   ButtonStyle,
@@ -25,8 +27,10 @@ import {
   ImageStyle,
 } from './styled';
 
-const callDescription = ({ text }) => (
-  <Paragraph key={text}>{text}</Paragraph>
+const callDescription = description => (
+  <DescriptionContainer component="div">
+    <ReactMarkdown source={description} />
+  </DescriptionContainer>
 );
 
 const callLearnMoreButton = (slug, learnMore) => {
@@ -34,7 +38,7 @@ const callLearnMoreButton = (slug, learnMore) => {
     return null;
   }
   return (
-    <Link href={`/${slug}`} target="_blank">
+    <Link href={`/event/${slug}`} target="_blank">
       <ButtonStyle>Learn More</ButtonStyle>
     </Link>
   );
@@ -115,10 +119,11 @@ const MainEventCard = (props) => {
 
   return (
     <Wrapper>
-      <ContainerLayout>
+      {/* <ContainerLayout> */}
         <Card>
           <CardContainer>
             <TextContainer>
+              <Description>
               <DateGroup>
                 <DateIconStyled />
                 <Date>{date}</Date>
@@ -129,19 +134,20 @@ const MainEventCard = (props) => {
                 <LocationIconStyled />
                 <Location>{location}</Location>
               </LocationItems>
-              {description.map(callDescription)}
-              <ButtonsGroup>
-                {callLearnMoreButton(slug, learnMore)}
-                {callProjectButton(addProjectUrl)}
-                {callCriteriaButton(criteriaUrl)}
-                {callGetStartedButton(getStartedUrl)}
-                {callSignUpButton(signupUrl)}
-              </ButtonsGroup>
+              {callDescription(description)}
+              </Description>
+              {callImage(containsImage)}
             </TextContainer>
-            {callImage(containsImage)}
+            <ButtonsGroup>
+              {callLearnMoreButton(slug, learnMore)}
+              {callProjectButton(addProjectUrl)}
+              {callCriteriaButton(criteriaUrl)}
+              {callGetStartedButton(getStartedUrl)}
+              {callSignUpButton(signupUrl)}
+            </ButtonsGroup>
           </CardContainer>
         </Card>
-      </ContainerLayout>
+      {/* </ContainerLayout> */}
     </Wrapper>
   );
 };
