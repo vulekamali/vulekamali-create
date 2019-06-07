@@ -119,11 +119,10 @@ const MainEventCard = (props) => {
 
   return (
     <Wrapper>
-      {/* <ContainerLayout> */}
-        <Card>
-          <CardContainer>
-            <TextContainer>
-              <Description>
+      <Card>
+        <CardContainer>
+          <TextContainer>
+            <Description>
               <DateGroup>
                 <DateIconStyled />
                 <Date>{date}</Date>
@@ -135,19 +134,18 @@ const MainEventCard = (props) => {
                 <Location>{location}</Location>
               </LocationItems>
               {callDescription(description)}
-              </Description>
-              {callImage(containsImage)}
-            </TextContainer>
-            <ButtonsGroup>
-              {callLearnMoreButton(slug, learnMore)}
-              {callProjectButton(addProjectUrl)}
-              {callCriteriaButton(criteriaUrl)}
-              {callGetStartedButton(getStartedUrl)}
-              {callSignUpButton(signupUrl)}
-            </ButtonsGroup>
-          </CardContainer>
-        </Card>
-      {/* </ContainerLayout> */}
+            </Description>
+            {callImage(containsImage)}
+          </TextContainer>
+          <ButtonsGroup>
+            {callLearnMoreButton(slug, learnMore)}
+            {callProjectButton(addProjectUrl)}
+            {callCriteriaButton(criteriaUrl)}
+            {callGetStartedButton(getStartedUrl)}
+            {callSignUpButton(signupUrl)}
+          </ButtonsGroup>
+        </CardContainer>
+      </Card>
     </Wrapper>
   );
 };
