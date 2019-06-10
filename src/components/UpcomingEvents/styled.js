@@ -13,8 +13,16 @@ const Layout = styled.div`
   margin: 0 20px;
 `;
 
+const EventsWrapper = styled.div`
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+`;
+
 const EventContainer = styled.div`
-  width: 100%;
   margin-bottom: 20px;
 `;
 
@@ -28,10 +36,6 @@ const Title = styled(Typography)`
     padding-top: 90px;
     padding-bottom: 30px;
   }
-`;
-
-const EventsWrapper = styled.div`
-  display: flex;
 `;
 
 export {
