@@ -5,6 +5,7 @@ import MainEventHomepage from '../components/mainEventHomepage';
 import Expectations from '../components/Expectations';
 import UpcomingEvents from '../components/UpcomingEvents';
 import PreviousEvents from '../components/PreviousEvents';
+import HomepageFooter from '../components/HomepageFooter';
 
 const IndexPage = () => (
   <React.Fragment>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <Expectations />
     <UpcomingEvents />
     <PreviousEvents />
+    <HomepageFooter />
   </React.Fragment>
 );
 
