@@ -2,13 +2,10 @@ import styled from 'styled-components';
 import { Typography, CardContent, Button } from '@material-ui/core';
 import LocationIcon from '@material-ui/icons/LocationOn';
 import CalendarIcon from '@material-ui/icons/DateRange';
-import imageHack from '../../images/background.jpg';
 
 const Wrapper = styled.div`
   width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: -100px;
+  max-width: 480px;
 `;
 
 const CardContainer = styled(CardContent)`
@@ -21,15 +18,6 @@ const CardContainer = styled(CardContent)`
 
   @media screen and (min-width: 1024px) {
     padding: 10px;
-  }
-`;
-
-const TextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  @media screen and (min-width: 850px) {
-    flex-direction: row;
   }
 `;
 
@@ -72,24 +60,17 @@ const Underline = styled.div`
 
 const Title = styled(Typography)`
   && {
-    font-family: Lato;
     color: #243858;
-    font-size: 35px;
+    font-size: 20px;
     font-weight: 700;
-    line-height: 40px;
-    padding-bottom: 14px;
 
     @media screen and (min-width: 850px) {
-      font-size: 42px;
-      font-weight: 900;
-      line-height: 48px;
       letter-spacing: 0.01em;
       padding-bottom: 12px;
     }
 
     @media screen and (min-width: 1024px) {
-      font-size: 50px;
-      line-height: 57px;
+      font-size: 24px;
     }
   }
 `;
@@ -97,7 +78,7 @@ const Title = styled(Typography)`
 const LocationItems = styled.div`
   display flex;
   align-items: center;
-  padding-bottom: 14px;
+  ${'' /* padding-bottom: 14px; */}
 `;
 
 const LocationIconStyled = styled(LocationIcon)`
@@ -120,22 +101,23 @@ const Location = styled(Typography)`
 `;
 
 const DescriptionContainer = styled(Typography)`
-  font-family: Lato;
-  color: #42526E;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  padding-bottom: 8px;
+  && {
+    font-family: Lato;
+    color: #42526E;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
 
-  @media screen and (min-width: 850px) {
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.01em;
-  }
+    @media screen and (min-width: 850px) {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+    }
 
-  @media screen and (min-width: 1024px) {
-    font-size: 20px;
-    line-height: 28px;
+    @media screen and (min-width: 1024px) {
+      font-size: 20px;
+      line-height: 28px;
+    }
   }
 `;
 
@@ -161,19 +143,18 @@ const Link = styled.a`
 `;
 
 const ButtonStyle = styled(Button)`
-  min-width: 200px;
-  height: 36px;
-  color: rgba(36, 56, 88, 0.7);
-  font-family: Lato;
-  font-size: 14px;
-  line-height: normal;
-  font-weight: 700;
-  text-align: center;
-  letter-spacing: 0.035em;
-  margin-top: 12px;
-  margin-right: 8px;
-
   && {
+    min-width: 200px;
+    height: 36px;
+    color: rgba(36, 56, 88, 0.7);
+    font-family: Lato;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.035em;
+    margin-top: 12px;
+    margin-right: 8px;
     background-color: rgba(0, 0, 0, 0.12);
   }
 `;
@@ -195,42 +176,9 @@ const ActionPackButton = styled(Button)`
   }
 `;
 
-const ImageContainer = styled.div`
-  width: 100%;
-  height: 135px;
-  order: -1;
-
-  @media screen and (min-width: 850px) {
-    order: 1;
-    height: auto;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-  }
-`;
-
-const ImageStyle = styled.div`
-  background-image: url('${imageHack}');
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-
-  @media screen and (min-width: 850px) {
-    border-radius: 50%;
-    height: 65%;
-  }
-
-  @media screen and (min-width: 1024px) {
-    height: 300px;
-    width: 300px;
-  }
-`;
-
 export {
   Wrapper,
   CardContainer,
-  TextContainer,
   Description,
   DateGroup,
   DateIconStyled,
@@ -245,14 +193,11 @@ export {
   Link,
   ButtonStyle,
   ActionPackButton,
-  ImageContainer,
-  ImageStyle,
 };
 
 export default {
   Wrapper,
   CardContainer,
-  TextContainer,
   Description,
   DateGroup,
   DateIconStyled,
@@ -267,6 +212,4 @@ export default {
   Link,
   ButtonStyle,
   ActionPackButton,
-  ImageContainer,
-  ImageStyle,
 };
