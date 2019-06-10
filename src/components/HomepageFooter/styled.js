@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import { Typography } from '@material-ui/core';
 
-import BulbIcon from '../../images/bulb';
-import LikeIcon from '../../images/like';
+import BulbIcon from '../../images/white-bulb';
+import LikeIcon from '../../images/white-like';
 
 const Wrapper = styled.div`
   width: 100%;
