@@ -7,7 +7,7 @@ const Wrapper = styled.div`
 
 const Layout = styled.div`
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 20px;
 `;
 
