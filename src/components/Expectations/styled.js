@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 import { Typography } from '@material-ui/core';
 
-import BulbIcon from '../../images/bulb';
-import LikeIcon from '../../images/like';
-
 const Wrapper = styled.div`
   width: 100%;
   display: flex;
@@ -14,12 +11,17 @@ const Wrapper = styled.div`
 const Heading = styled(Typography)`
   && {
     text-transform: Uppercase;
-    font-size: 14px;
-    font-weight: 900;
+    font-size: 12px;
+    font-weight: 700;
     line-height: 17px;
     letter-spacing: 0.05em;
     color: #42526e;
     margin-bottom: 16px;
+
+    @media screen and (min-width: 450px) {
+      font-size: 14px;
+      font-weight: 900;
+    }
   }
 `;
 
@@ -43,32 +45,27 @@ const TextContainer = styled.div`
 
 const Title = styled(Typography)`
   && {
-    font-weight: 900;
-    font-size: 24px;
+    font-weight: 700;
+    font-size: 18px;
     line-height: 29px;
     color: #243858;
+
+    @media screen and (min-width: 400px) {
+      font-size: 24px;
+      font-weight: 900;
+    }
   }
 `;
 
 const Text = styled(Typography)`
   && {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
     color: #42526E;
-  }
-`;
 
-const BulbIconStyled = styled(BulbIcon)`
-  && {
-    width: 40px;
-    height: 40px;
-  }
-`;
-
-const LikeIconStyled = styled(LikeIcon)`
-  && {
-    width: 400px;
-    height: 40px;
+    @media screen and (min-width: 400px) {
+      font-size: 16px;
+    }
   }
 `;
 
@@ -80,8 +77,6 @@ export {
   TextContainer,
   Title,
   Text,
-  BulbIconStyled,
-  LikeIconStyled,
 };
 
 export default {
@@ -92,6 +87,4 @@ export default {
   TextContainer,
   Title,
   Text,
-  BulbIconStyled,
-  LikeIconStyled,
 };

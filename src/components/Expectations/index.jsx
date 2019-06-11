@@ -1,6 +1,9 @@
 import React from 'react';
 import ContainerLayout from '../containerLayout';
 
+import BulbIcon from '../../images/bulb';
+import LikeIcon from '../../images/like';
+
 import {
   Wrapper,
   Heading,
@@ -9,8 +12,6 @@ import {
   TextContainer,
   Title,
   Text,
-  BulbIconStyled,
-  LikeIconStyled,
 } from './styled';
 
 const Expectations = () => (
@@ -20,7 +21,7 @@ const Expectations = () => (
         <Heading>What to expect:</Heading>
         <Underline />
         <Description>
-          <BulbIconStyled />
+          <BulbIcon />
           <TextContainer>
             <Title>Unleash your creativity</Title>
             <Text>asdasdasdasdasdasdasd sdg asfd g sd gfasd g sdag sd gd
@@ -29,7 +30,7 @@ const Expectations = () => (
           </TextContainer>
         </Description>
         <Description>
-          <LikeIconStyled />
+          <LikeIcon />
           <TextContainer>
             <Title>Collaborate with others</Title>
             <Text>asdasdasdasdasdasdasd sdg asfd g sd gfasd g sdag sd gd

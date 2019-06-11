@@ -1,6 +1,9 @@
 import React from 'react';
 import ContainerLayout from '../containerLayout';
 
+import BulbIcon from '../../images/white-bulb';
+import LikeIcon from '../../images/white-like';
+
 import {
   Wrapper,
   Heading,
@@ -9,8 +12,6 @@ import {
   TextContainer,
   Title,
   Text,
-  BulbIconStyled,
-  LikeIconStyled,
   FooterContainer,
   FooterText,
 } from './styled';
@@ -22,7 +23,7 @@ const Expectations = () => (
         <Heading>WHAT IS VULEKAMLI CREATE?</Heading>
         <Underline />
         <Description>
-          <BulbIconStyled />
+          <BulbIcon />
           <TextContainer>
             <Title>A Sharing Platform</Title>
             <Text>asdasdasdasdasdasdasd sdg asfd g sd gfasd g sdag sd gd
@@ -31,7 +32,7 @@ const Expectations = () => (
           </TextContainer>
         </Description>
         <Description>
-          <LikeIconStyled />
+          <LikeIcon />
           <TextContainer>
             <Title>A Collaborative Space</Title>
             <Text>asdasdasdasdasdasdasd sdg asfd g sd gfasd g sdag sd gd
@@ -40,7 +41,7 @@ const Expectations = () => (
           </TextContainer>
         </Description>
         <Description>
-          <LikeIconStyled />
+          <LikeIcon />
           <TextContainer>
             <Title>A Place for Learning</Title>
             <Text>asdasdasdasdasdasdasd sdg asfd g sd gfasd g sdag sd gd
