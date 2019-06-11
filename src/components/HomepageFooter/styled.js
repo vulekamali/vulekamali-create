@@ -36,6 +36,7 @@ const Underline = styled.div`
 const Description = styled.div`
   display: flex;
   margin-bottom: 28px;
+  align-items: center;
 `;
 
 const TextContainer = styled.div`
@@ -54,18 +55,6 @@ const Title = styled(Typography)`
     @media screen and (min-width: 400px) {
       font-size: 24px;
       font-weight: 900;
-    }
-  }
-`;
-
-const Text = styled(Typography)`
-  && {
-    font-size: 14px;
-    line-height: 22px;
-    color: rgba(255, 255, 255, 0.6);
-
-    @media screen and (min-width: 400px) {
-      font-size: 16px;
     }
   }
 `;
@@ -90,6 +79,13 @@ const FooterText = styled(Typography)`
   letter-spacing: 0.05em;
 `;
 
+const Container = styled.div`
+  @media screen and (min-width: 650px) {
+    display: flex;
+    justify-content: space-between;
+  }
+`;
+
 export {
   Wrapper,
   Heading,
@@ -97,9 +93,9 @@ export {
   Description,
   TextContainer,
   Title,
-  Text,
   FooterContainer,
   FooterText,
+  Container,
 };
 
 export default {
@@ -109,7 +105,7 @@ export default {
   Description,
   TextContainer,
   Title,
-  Text,
   FooterContainer,
   FooterText,
+  Container,
 };

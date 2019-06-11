@@ -24,8 +24,7 @@ const Expectations = () => (
           <BulbIcon />
           <TextContainer>
             <Title>Unleash your creativity</Title>
-            <Text>asdasdasdasdasdasdasd sdg asfd g sd gfasd g sdag sd gd
-            SDG ASAD AF SD ASD sd ds fh asfd gsad gh asfh sd g.
+            <Text>See what you can do with government budget and spending data. Visualise it. Explore it. Explain it.
             </Text>
           </TextContainer>
         </Description>
@@ -33,8 +32,7 @@ const Expectations = () => (
           <LikeIcon />
           <TextContainer>
             <Title>Collaborate with others</Title>
-            <Text>asdasdasdasdasdasdasd sdg asfd g sd gfasd g sdag sd gd
-            SDG ASAD AF SD ASD sd ds fh asfd gsad gh asfh sd g.
+            <Text>Find others working on related problems. Share ideas and build on each others' progress.
             </Text>
           </TextContainer>
         </Description>

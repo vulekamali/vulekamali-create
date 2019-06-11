@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
 
 import { Card } from '@material-ui/core';
-import GlobalStyle from './GlobalStyle';
 
 import {
   Wrapper,
@@ -26,7 +25,6 @@ import {
 
 const callDescription = description => (
   <DescriptionContainer component="div">
-    <GlobalStyle />
     <ReactMarkdown source={description} />
   </DescriptionContainer>
 );

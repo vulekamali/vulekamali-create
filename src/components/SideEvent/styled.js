@@ -78,7 +78,6 @@ const Title = styled(Typography)`
 const LocationItems = styled.div`
   display flex;
   align-items: center;
-  ${'' /* padding-bottom: 14px; */}
 `;
 
 const LocationIconStyled = styled(LocationIcon)`

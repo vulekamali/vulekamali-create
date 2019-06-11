@@ -11,9 +11,9 @@ import {
   Description,
   TextContainer,
   Title,
-  Text,
   FooterContainer,
   FooterText,
+  Container,
 } from './styled';
 
 const Expectations = () => (
@@ -22,33 +22,27 @@ const Expectations = () => (
       <div>
         <Heading>WHAT IS VULEKAMLI CREATE?</Heading>
         <Underline />
+        <Container>
         <Description>
           <BulbIcon />
           <TextContainer>
             <Title>A Sharing Platform</Title>
-            <Text>asdasdasdasdasdasdasd sdg asfd g sd gfasd g sdag sd gd
-            SDG ASAD AF SD ASD sd ds fh asfd gsad gh asfh sd g.
-            </Text>
           </TextContainer>
         </Description>
         <Description>
           <LikeIcon />
           <TextContainer>
             <Title>A Collaborative Space</Title>
-            <Text>asdasdasdasdasdasdasd sdg asfd g sd gfasd g sdag sd gd
-            SDG ASAD AF SD ASD sd ds fh asfd gsad gh asfh sd g.
-            </Text>
           </TextContainer>
         </Description>
         <Description>
           <LikeIcon />
           <TextContainer>
             <Title>A Place for Learning</Title>
-            <Text>asdasdasdasdasdasdasd sdg asfd g sd gfasd g sdag sd gd
-            SDG ASAD AF SD ASD sd ds fh asfd gsad gh asfh sd g.
-            </Text>
           </TextContainer>
         </Description>
+        </Container>
+        
       </div>
       <FooterContainer>
         <FooterText>

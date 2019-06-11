@@ -23,7 +23,7 @@ const EventsWrapper = styled.div`
 `;
 
 const EventContainer = styled.div`
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 `;
 
 const Title = styled(Typography)`
