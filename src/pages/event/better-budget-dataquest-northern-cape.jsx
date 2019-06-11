@@ -1,11 +1,11 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import Header from '../components/header';
-import Hero from '../components/hero';
-import Footer from '../components/footer';
-import MainEventEventpage from '../components/mainEventEventpage';
-import ProjectList from '../components/projectList';
-import MicroBlog from '../components/microBlog';
+import Header from '../../components/header';
+import Hero from '../../components/hero';
+import Footer from '../../components/footer';
+import MainEventEventpage from '../../components/mainEventEventpage';
+import ProjectList from '../../components/projectList';
+import MicroBlog from '../../components/microBlog';
 
 const EventPage = () => (
   <React.Fragment>
