@@ -32,16 +32,12 @@ const Header = () => (
         <ListContainer>
           <List>
             <ScrollLinkStyled to="upcoming-events" smooth duration={500}>
-              {/* <LinkStyle href="needs-anchor-tag"> */}
-                Upcoming Event
-              {/* </LinkStyle> */}
+              Upcoming Event
             </ScrollLinkStyled>
           </List>
           <RightItemsList>
             <ScrollLinkStyled to="previous-events" smooth duration={500}>
-              {/* <LinkStyle href="needs-anchor-tag"> */}
-                Previous Events
-              {/* </LinkStyle> */}
+              Previous Events
             </ScrollLinkStyled>
           </RightItemsList>
         </ListContainer>
