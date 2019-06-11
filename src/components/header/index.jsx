@@ -10,7 +10,7 @@ import {
   LinkStyle,
   ScrollLinkStyled,
   List,
-  RightItemsList
+  RightItemsList,
 } from './styled';
 
 const Header = () => (
