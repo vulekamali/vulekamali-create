@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import { Typography } from '@material-ui/core';
+import removeProps from '../../helpers/removeProps';
 
 const Wrapper = styled.div`
   height: 280px;
@@ -33,7 +34,7 @@ const ContainerLayout = styled.div`
   margin: 0 20px;
 `;
 
-const Text = styled(Typography)`
+const Text = styled(removeProps({ component: Typography, blacklist: 'home' }))`
   color: #fff;
   font-family: Lato;
   line-height: normal;

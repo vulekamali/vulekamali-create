@@ -156,11 +156,7 @@ MainEventCard.propTypes = {
     date: PropTypes.string,
     title: PropTypes.string,
     location: PropTypes.string,
-    description: PropTypes.arrayOf(
-      PropTypes.shape({
-        text: PropTypes.string,
-      }),
-    ),
+    description: PropTypes.string,
     slug: PropTypes.string,
   }).isRequired,
   learnMore: PropTypes.bool,

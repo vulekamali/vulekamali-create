@@ -42,7 +42,7 @@ class ProjectList extends Component {
     );
   }
 
-  callProjectLists = projects => projects.filter(({ tags }) => !!tags.find(region => region.toLowerCase() === 'northern cape')).map(({
+  callProjectLists = (projects, eventTag) => projects.filter(({ tags }) => !!tags.find(region => region.toLowerCase() === eventTag)).map(({
     contributors,
     title,
     description,
@@ -71,6 +71,7 @@ class ProjectList extends Component {
 
   render() {
     const { projects } = this.state;
+    const { eventTag } = this.props;
     return (
       <Wrapper>
         <ContainerLayout>
@@ -83,7 +84,7 @@ class ProjectList extends Component {
             </Link>
           </ButtonContainer>
           <ProjectsContainer>
-            {this.callProjectLists(projects)}
+            {this.callProjectLists(projects, eventTag)}
           </ProjectsContainer>
         </ContainerLayout>
       </Wrapper>
