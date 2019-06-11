@@ -1,4 +1,5 @@
 import React from 'react';
+
 import ContainerLayout from '../containerLayout';
 
 import {
@@ -7,6 +8,7 @@ import {
   ListContainer,
   LeftItemsList,
   LinkStyle,
+  ScrollLinkStyled,
   List,
   RightItemsList
 } from './styled';
@@ -29,14 +31,18 @@ const Header = () => (
         </ListContainer>
         <ListContainer>
           <List>
-            <LinkStyle href="needs-anchor-tag">
-              Upcoming Event
-            </LinkStyle>
+            <ScrollLinkStyled to="upcoming-events" smooth duration={500}>
+              {/* <LinkStyle href="needs-anchor-tag"> */}
+                Upcoming Event
+              {/* </LinkStyle> */}
+            </ScrollLinkStyled>
           </List>
           <RightItemsList>
-            <LinkStyle href="needs-anchor-tag">
-              Previous Events
-            </LinkStyle>
+            <ScrollLinkStyled to="previous-events" smooth duration={500}>
+              {/* <LinkStyle href="needs-anchor-tag"> */}
+                Previous Events
+              {/* </LinkStyle> */}
+            </ScrollLinkStyled>
           </RightItemsList>
         </ListContainer>
       </NavItemsContainer>

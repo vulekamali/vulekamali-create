@@ -11,7 +11,7 @@ import {
 } from './styled';
 
 const UpcomingEvents = () => (
-  <Wrapper>
+  <Wrapper id="previous-events">
     <Layout>
       <Title>Previous Events</Title>
       <EventsWrapper>
