@@ -29,7 +29,8 @@ const Wrapper = styled.div`
 
 const ContainerLayout = styled.div`
   width: 100%;
-  max-width: ${({ home }) => (home ? '800px' : '1000px')};
+  max-width: 1000px;
+  margin: 0 20px;
 `;
 
 const Text = styled(Typography)`
@@ -39,25 +40,26 @@ const Text = styled(Typography)`
   font-size: 60px;
   font-weight: 700;
   letter-spacing: -0.01em;
-  padding-top: 90px;
-  padding-bottom: 25px;
+  padding-top: ${({ home }) => (home ? '20px' : '90px')};
 
   @media screen and (min-width: 450px) {
-    ${'' /* font-size: 75px; */}
     padding-top: 110px;
   }
 
   @media screen and (min-width: 650px) {
     font-size: 90px;
     font-weight: 900;
+  }
+
+  @media screen and (min-width: 850px) {
     padding-top: 200px;
   }
 `;
 
 const Hero = ({ title, home }) => (
   <Wrapper>
-    <ContainerLayout {...{ home }}>
-      <Text>{title}</Text>
+    <ContainerLayout>
+      <Text {...{ home }}>{title}</Text>
     </ContainerLayout>
   </Wrapper>
 );

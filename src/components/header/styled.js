@@ -23,8 +23,6 @@ const ListContainer = styled.ul`
   @media screen and (min-width: 650px) {
     width: 280px;
   }
-
-  width: ;
 `;
 
 const List = styled.li`
