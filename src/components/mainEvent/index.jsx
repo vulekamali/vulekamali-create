@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
 
 import { Card } from '@material-ui/core';
-import ContainerLayout from '../containerLayout';
 
 import {
   Wrapper,
