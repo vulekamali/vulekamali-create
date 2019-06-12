@@ -6,6 +6,7 @@ import Footer from '../../components/footer';
 import MainEventEventpage from '../../components/mainEventEventpage';
 import MicroBlog from '../../components/microBlog';
 import freeStateDQCopy from '../../data/freeStateDQ.json';
+import ProjectList from '../../components/projectList';
 
 const EventPage = () => (
   <React.Fragment>
@@ -24,6 +25,7 @@ const EventPage = () => (
       getStartedUrl={null}
       signupUrl={null}
     />
+    <ProjectList eventTag="free state" />
     <MicroBlog embed="coming-soon" />
     <Footer />
   </React.Fragment>
