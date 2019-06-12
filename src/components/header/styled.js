@@ -20,7 +20,7 @@ const ListContainer = styled.ul`
   display: flex;
   justify-content: space-between;
   padding: 0;
-  width: 200px;
+  width: 160px;
 
   @media screen and (min-width: 650px) {
     width: 280px;
