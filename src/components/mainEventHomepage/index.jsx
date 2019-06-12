@@ -1,6 +1,8 @@
 import React from 'react';
 import MainEvent from '../mainEvent';
-import copy from '../../data/northernCape.json';
+
+import freeStateLiteracyCopy from '../../data/freeStateLiteracy.json';
+import freeStateDQcopy from '../../data/freeStateDQ.json';
 
 import { Wrapper, Layout } from './styled';
 
@@ -8,13 +10,13 @@ const MainEventHomepage = () => (
   <Wrapper>
     <Layout>
       <MainEvent
-        eventCopy={copy}
+        eventCopy={freeStateLiteracyCopy}
         learnMore
         signupUrl="https://s3-eu-west-1.amazonaws.com/manual-uploads.vulekamali.gov.za/events/Vulekamali+BetterBudgetSA+Dataquest+NC%2C+01+-+02+March.pdf"
       />
       <MainEvent
         secondCard
-        eventCopy={copy}
+        eventCopy={freeStateDQcopy}
         learnMore
         signupUrl="https://s3-eu-west-1.amazonaws.com/manual-uploads.vulekamali.gov.za/events/Vulekamali+BetterBudgetSA+Dataquest+NC%2C+01+-+02+March.pdf"
       />

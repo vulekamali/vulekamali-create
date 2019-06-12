@@ -12,11 +12,11 @@ import HomepageFooter from '../components/HomepageFooter';
 const IndexPage = () => (
   <React.Fragment>
     <Helmet>
-      <title>Vulekamali Create</title>
+      <title>vulekamali Create</title>
       <meta name="twitter:card" content="summary" />
-      <meta property="og:title" content="Insert Here" />
-      <meta property="og:description" content="Insert Here" />
-      <meta name="description" content="Insert Here" />
+      <meta property="og:title" content="vulekamali Create" />
+      <meta property="og:description" content="Unleash your creativity. See what you can do with government budget and spending data. Visualise it. Explore it. Explain it." />
+      <meta name="description" content="Unleash your creativity. See what you can do with government budget and spending data. Visualise it. Explore it. Explain it." />
     </Helmet>
     <Header />
     <Hero title="Create with us!" home />

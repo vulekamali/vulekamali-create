@@ -7,6 +7,8 @@ import MainEventEventpage from '../../components/mainEventEventpage';
 import ProjectList from '../../components/projectList';
 import MicroBlog from '../../components/microBlog';
 
+import northernCapeCopy from '../../data/northernCape.json';
+
 const EventPage = () => (
   <React.Fragment>
     <Helmet>
@@ -18,7 +20,9 @@ const EventPage = () => (
     </Helmet>
     <Header />
     <Hero title="Event" />
-    <MainEventEventpage />
+    <MainEventEventpage
+      eventCopy={northernCapeCopy}
+      />
     <ProjectList eventTag="northern cape" />
     <MicroBlog type="hardcoded" id="northern-cape" />
     <Footer />
