@@ -4,7 +4,6 @@ import Header from '../../components/header';
 import Hero from '../../components/hero';
 import Footer from '../../components/footer';
 import MainEventEventpage from '../../components/mainEventEventpage';
-import ProjectList from '../../components/projectList';
 import MicroBlog from '../../components/microBlog';
 import freeStateLiteracyCopy from '../../data/freeStateLiteracy.json';
 
@@ -24,9 +23,8 @@ const EventPage = () => (
       criteriaUrl={null}
       getStartedUrl={null}
       signupUrl={null}
-      />
-    {/* <ProjectList eventTag="free state" /> */}
-    <MicroBlog type="coming-soon" />
+    />
+    <MicroBlog embed="coming-soon" />
     <Footer />
   </React.Fragment>
 );
