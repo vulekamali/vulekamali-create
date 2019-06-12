@@ -1,6 +1,6 @@
 import React from 'react';
 import SideEvent from '../SideEvent';
-import copy from '../../data/placeholderSideEvent.json';
+import northernCapeCopy from '../../data/northernCape.json';
 
 import {
   Wrapper,
@@ -17,25 +17,7 @@ const UpcomingEvents = () => (
       <EventsWrapper>
         <EventContainer>
           <SideEvent
-            eventCopy={copy}
-            learnMore
-          />
-        </EventContainer>
-        <EventContainer>
-          <SideEvent
-            eventCopy={copy}
-            learnMore
-          />
-        </EventContainer>
-        <EventContainer>
-          <SideEvent
-            eventCopy={copy}
-            learnMore
-          />
-        </EventContainer>
-        <EventContainer>
-          <SideEvent
-            eventCopy={copy}
+            eventCopy={northernCapeCopy}
             learnMore
           />
         </EventContainer>

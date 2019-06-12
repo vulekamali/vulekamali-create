@@ -25,9 +25,9 @@ const EventPage = () => (
       criteriaUrl="https://docs.google.com/document/d/1sVMD4OJHuOClKSVuA2Cj57vXR0AiaDtux5m7Re510tI/export?format=pdf"
       getStartedUrl="https://s3-eu-west-1.amazonaws.com/manual-uploads.vulekamali.gov.za/events/Vulekamali+BetterBudgetSA+Dataquest+NC%2C+01+-+02+March.pdf"
       signupUrl="https://s3-eu-west-1.amazonaws.com/manual-uploads.vulekamali.gov.za/events/Vulekamali+BetterBudgetSA+Dataquest+NC%2C+01+-+02+March.pdf"
-      />
+    />
     <ProjectList eventTag="northern cape" />
-    <MicroBlog type="hardcoded" id="northern-cape" />
+    <MicroBlog embed="hardcoded" id="northern-cape" />
     <Footer />
   </React.Fragment>
 );

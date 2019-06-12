@@ -100,26 +100,14 @@ MainEventCard.propTypes = {
     date: PropTypes.string,
     title: PropTypes.string,
     location: PropTypes.string,
-    description: PropTypes.arrayOf(
-      PropTypes.shape({
-        text: PropTypes.string,
-      }),
-    ),
+    description: PropTypes.string,
     slug: PropTypes.string,
   }).isRequired,
   learnMore: PropTypes.bool,
-  addProjectUrl: PropTypes.string,
-  criteriaUrl: PropTypes.string,
-  getStartedUrl: PropTypes.string,
   signupUrl: PropTypes.string,
-  containsImage: PropTypes.bool,
 };
 
 MainEventCard.defaultProps = {
   learnMore: false,
-  addProjectUrl: null,
-  criteriaUrl: null,
-  getStartedUrl: null,
   signupUrl: null,
-  containsImage: false,
 };

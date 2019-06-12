@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import { CardContent } from '@material-ui/core';
@@ -19,14 +19,14 @@ const timelineDetails = {
   'northern-cape': `${hardCodedHtml}`,
 };
 
-const callMicroblog = (type, id) => {
-  if (type === 'hardcoded') {
+const callMicroblog = (embed, id) => {
+  if (embed === 'hardcoded') {
     return <div dangerouslySetInnerHTML={{ __html: timelineDetails[id] }} />;
   }
-  if (type === 'script') {
+  if (embed === 'script') {
     return <MicroBlogEmbed id="LB24_LIVE_CONTENT" data-eid={id} />;
   }
-  if (type === 'coming-soon') {
+  if (embed === 'coming-soon') {
     return (
       <ComingSoonContainer>
         <CardContent>
@@ -38,21 +38,45 @@ const callMicroblog = (type, id) => {
   return null;
 };
 
-const MicroBlog = ({ type, id }) => (
-  <Wrapper>
-    <GlobalStyle />
-    <ContainerLayout>
-      <Title>Timeline</Title>
-      {callMicroblog(type, id)}
-    </ContainerLayout>
-  </Wrapper>
-);
+class MicroBlog extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      embed: this.props.embed,
+    };
+  }
+
+  componentDidMount() {
+    if(this.state.embed === 'script') {
+      const script = document.createElement("script");
+
+      script.src = "https://v.24liveblog.com/24.js";
+      script.defer = true;
+
+      document.body.appendChild(script);
+    }
+  }
+
+  render() {
+    const { embed, id } = this.props;
+    return (
+      <Wrapper>
+        <GlobalStyle />
+        <ContainerLayout>
+          <Title>Timeline</Title>
+          {callMicroblog(embed, id)}
+        </ContainerLayout>
+      </Wrapper>
+    )
+  }
+}
 
 export default MicroBlog;
 
 MicroBlog.propTypes = {
-  /** type is always a `string`that can be one of the following: `hardcoded`, `script`, or `coming-soon` */
-  type: PropTypes.string.isRequired,
+  /** embed is always a `string`that can be one of the following: `hardcoded`, `script`, or `coming-soon` */
+  embed: PropTypes.string.isRequired,
   id: PropTypes.string,
 };
 

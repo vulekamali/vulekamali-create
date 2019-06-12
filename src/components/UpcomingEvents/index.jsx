@@ -20,14 +20,12 @@ const UpcomingEvents = () => (
           <SideEvent
             eventCopy={northWestLiteracyCopy}
             learnMore
-            signupUrl="https://s3-eu-west-1.amazonaws.com/manual-uploads.vulekamali.gov.za/events/Vulekamali+BetterBudgetSA+Dataquest+NC%2C+01+-+02+March.pdf"
           />
         </EventContainer>
         <EventContainer>
           <SideEvent
             eventCopy={northWestDQCopy}
             learnMore
-            signupUrl="https://s3-eu-west-1.amazonaws.com/manual-uploads.vulekamali.gov.za/events/Vulekamali+BetterBudgetSA+Dataquest+NC%2C+01+-+02+March.pdf"
           />
         </EventContainer>
       </EventsWrapper>
