@@ -8,10 +8,10 @@ import {
   ListContainer,
   LeftItemsList,
   LinkStyle,
-  ScrollLinkStyled,
   List,
   RightItemsList,
 } from './styled';
+import GatsbyLink from 'gatsby-link';
 
 const Header = () => (
   <Wrapper>
@@ -30,15 +30,10 @@ const Header = () => (
           </List>
         </ListContainer>
         <ListContainer>
-          <List>
-            <ScrollLinkStyled to="upcoming-events" smooth duration={500}>
-              Upcoming Event
-            </ScrollLinkStyled>
-          </List>
           <RightItemsList>
-            <ScrollLinkStyled to="previous-events" smooth duration={500}>
+            <LinkStyle href="/#previous-events">
               Previous Events
-            </ScrollLinkStyled>
+            </LinkStyle>
           </RightItemsList>
         </ListContainer>
       </NavItemsContainer>

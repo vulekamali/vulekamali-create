@@ -71,38 +71,12 @@ const LinkStyle = styled.a`
   }
 `;
 
-const ScrollLinkStyled = styled(ScrollLink)`
-  cursor: pointer;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
-  text-transform: Uppercase;
-  font-family: Lato;
-  font-weight: 700;
-  line-height: normal;
-  font-size: 10px;
-
-  &:hover {
-    color: #fff;
-  }
-
-  &:focus {
-    color: #8ECA62;
-    font-weight: 400;
-  }
-
-  @media screen and (min-width: 450px) {
-    font-weight: 900;
-    font-size: 14px;
-  }
-`;
-
 export {
   Wrapper,
   NavItemsContainer,
   ListContainer,
   LeftItemsList,
   LinkStyle,
-  ScrollLinkStyled,
   List,
   RightItemsList,
 };
@@ -113,7 +87,6 @@ export default {
   ListContainer,
   LeftItemsList,
   LinkStyle,
-  ScrollLinkStyled,
   List,
   RightItemsList,
 };
