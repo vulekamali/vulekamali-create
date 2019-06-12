@@ -107,6 +107,7 @@ const MainEventCard = (props) => {
     getStartedUrl,
     signupUrl,
     containsImage,
+    secondCard,
   } = props;
   const {
     date,
@@ -117,7 +118,7 @@ const MainEventCard = (props) => {
   } = eventCopy;
 
   return (
-    <Wrapper>
+    <Wrapper {...{ secondCard }}>
       <Card>
         <CardContainer>
           <TextContainer>
