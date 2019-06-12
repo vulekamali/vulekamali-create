@@ -20,7 +20,7 @@ const EventPage = () => (
     <Hero title="Event" />
     <MainEventEventpage />
     <ProjectList eventTag="northern cape" />
-    <MicroBlog />
+    <MicroBlog type="hardcoded" id="northern-cape" />
     <Footer />
   </React.Fragment>
 );

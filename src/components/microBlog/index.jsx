@@ -1,45 +1,61 @@
 import React from 'react';
-import styled from 'styled-components';
+import PropTypes from 'prop-types';
+
+import { CardContent } from '@material-ui/core';
+
 import ContainerLayout from '../containerLayout';
 import GlobalStyle from './GlobalStyle';
 import hardCodedHtml from './hardCodedHtml';
-import { Typography } from '@material-ui/core';
 
-const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  font-family: Lato;
-  color: black;
-  margin-top: 40px;
+import {
+  Wrapper,
+  Title,
+  MicroBlogEmbed,
+  ComingSoonContainer,
+  ComingSoonText,
+} from './styled';
 
-  @media screen and (min-width: 650px) {
-    margin-top: 58px;
+const timelineDetails = {
+  'northern-cape': `${hardCodedHtml}`,
+};
+
+const callMicroblog = (type, id) => {
+  if (type === 'hardcoded') {
+    return <div dangerouslySetInnerHTML={{ __html: timelineDetails[id] }} />;
   }
-`;
-
-const Title = styled(Typography)`
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 900;
-  line-height: 40px;
-  font-size: 25px;
-  letter-spacing: 0.01em;
-  color: #243858;
-
-  @media screen and (min-width: 650px) {
-    font-size: 35px;
+  if (type === 'script') {
+    return <MicroBlogEmbed id="LB24_LIVE_CONTENT" data-eid={id} />;
   }
-`;
+  if (type === 'coming-soon') {
+    return (
+      <ComingSoonContainer>
+        <CardContent>
+          <ComingSoonText>Coming Soon...</ComingSoonText>
+        </CardContent>
+      </ComingSoonContainer>
+    );
+  }
+  return null;
+};
 
-
-const MicroBlog = () => (
+const MicroBlog = ({ type, id }) => (
   <Wrapper>
     <GlobalStyle />
     <ContainerLayout>
       <Title>Timeline</Title>
-      <div dangerouslySetInnerHTML={{ __html: hardCodedHtml }} />
+      {callMicroblog(type, id)}
     </ContainerLayout>
   </Wrapper>
 );
 
 export default MicroBlog;
+
+MicroBlog.propTypes = {
+  /** type is always a `string`that can be one of the following: `hardcoded`, `script`, or `coming-soon` */
+  type: PropTypes.string.isRequired,
+  id: PropTypes.string,
+};
+
+MicroBlog.defaultProps = {
+  id: '',
+};
