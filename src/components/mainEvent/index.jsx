@@ -37,7 +37,7 @@ const callLearnMoreButton = (slug, learnMore) => {
     return null;
   }
   return (
-    <Link href={`/event/${slug}`} target="_blank">
+    <Link href={`/event/${slug}`}>
       <ButtonStyle>Learn More</ButtonStyle>
     </Link>
   );
