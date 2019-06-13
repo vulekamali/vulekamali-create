@@ -1,8 +1,8 @@
 import React from 'react';
 import MainEvent from '../mainEvent';
 
-import freeStateLiteracyCopy from '../../data/freeStateLiteracyHome.json';
-import freeStateDQcopy from '../../data/freeStateDQHome.json';
+import freeStateLiteracyCopy from '../../data/freeStateLiteracy.json';
+import freeStateDQcopy from '../../data/freeStateDQ.json';
 
 import { Wrapper, Layout } from './styled';
 
@@ -12,11 +12,13 @@ const MainEventHomepage = () => (
       <MainEvent
         eventCopy={freeStateLiteracyCopy}
         learnMore
+        home
       />
       <MainEvent
         secondCard
         eventCopy={freeStateDQcopy}
         learnMore
+        home
       />
     </Layout>
   </Wrapper>

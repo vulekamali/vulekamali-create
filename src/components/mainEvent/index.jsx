@@ -26,9 +26,9 @@ import {
   ImageStyle,
 } from './styled';
 
-const callDescription = description => (
+const callDescription = (description, home, descriptionShort) => (
   <DescriptionContainer component="div">
-    <ReactMarkdown source={description} />
+    <ReactMarkdown source={home ? descriptionShort : description} />
   </DescriptionContainer>
 );
 
@@ -108,12 +108,14 @@ const MainEventCard = (props) => {
     signupUrl,
     containsImage,
     secondCard,
+    home,
   } = props;
   const {
     date,
     title,
     location,
     description,
+    descriptionShort,
     slug,
   } = eventCopy;
 
@@ -133,7 +135,7 @@ const MainEventCard = (props) => {
                 <LocationIconStyled />
                 <Location>{location}</Location>
               </LocationItems>
-              {callDescription(description)}
+              {callDescription(description, home, descriptionShort)}
             </Description>
             {callImage(containsImage)}
           </TextContainer>
