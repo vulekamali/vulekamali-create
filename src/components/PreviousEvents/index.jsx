@@ -1,6 +1,6 @@
 import React from 'react';
 import SideEvent from '../SideEvent';
-import northernCapeCopy from '../../data/northernCape.json';
+import northernCapeCopy from '../../data/northernCapeHome.json';
 
 import {
   Wrapper,

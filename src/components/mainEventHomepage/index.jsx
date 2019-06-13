@@ -1,8 +1,8 @@
 import React from 'react';
 import MainEvent from '../mainEvent';
 
-import freeStateLiteracyCopy from '../../data/freeStateLiteracy.json';
-import freeStateDQcopy from '../../data/freeStateDQ.json';
+import freeStateLiteracyCopy from '../../data/freeStateLiteracyHome.json';
+import freeStateDQcopy from '../../data/freeStateDQHome.json';
 
 import { Wrapper, Layout } from './styled';
 
