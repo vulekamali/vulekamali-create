@@ -20,7 +20,7 @@ const Expectations = () => (
   <Wrapper>
     <ContainerLayout>
       <div>
-        <Heading>WHAT IS VULEKAMLI CREATE?</Heading>
+        <Heading>WHAT IS VULEKAMALI CREATE?</Heading>
         <Underline />
         <Container>
         <Description>
