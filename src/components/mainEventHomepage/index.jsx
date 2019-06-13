@@ -12,11 +12,13 @@ const MainEventHomepage = () => (
       <MainEvent
         eventCopy={freeStateLiteracyCopy}
         learnMore
+        home
       />
       <MainEvent
         secondCard
         eventCopy={freeStateDQcopy}
         learnMore
+        home
       />
     </Layout>
   </Wrapper>
