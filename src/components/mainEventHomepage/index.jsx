@@ -1,25 +1,22 @@
 import React from 'react';
 import MainEvent from '../mainEvent';
 
-import freeStateLiteracyCopy from '../../data/freeStateLiteracy.json';
-import freeStateDQcopy from '../../data/freeStateDQ.json';
+import events from '../../data/events.json';
 
 import { Wrapper, Layout } from './styled';
+
+const eventCards = events.featured.map(eventCopy =>
+  <MainEvent
+    eventCopy={eventCopy}
+    learnMore
+    home
+  />
+);
 
 const MainEventHomepage = () => (
   <Wrapper>
     <Layout>
-      <MainEvent
-        eventCopy={freeStateLiteracyCopy}
-        learnMore
-        home
-      />
-      <MainEvent
-        secondCard
-        eventCopy={freeStateDQcopy}
-        learnMore
-        home
-      />
+      {eventCards}
     </Layout>
   </Wrapper>
 );
