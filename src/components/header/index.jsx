@@ -6,12 +6,12 @@ import {
   Wrapper,
   NavItemsContainer,
   ListContainer,
+  ListContainerRight,
   LeftItemsList,
   LinkStyle,
   List,
   RightItemsList,
 } from './styled';
-import GatsbyLink from 'gatsby-link';
 
 const Header = () => (
   <Wrapper>
@@ -29,13 +29,13 @@ const Header = () => (
             </LinkStyle>
           </List>
         </ListContainer>
-        <ListContainer>
+        <ListContainerRight>
           <RightItemsList>
             <LinkStyle href="/#previous-events">
               Previous Events
             </LinkStyle>
           </RightItemsList>
-        </ListContainer>
+        </ListContainerRight>
       </NavItemsContainer>
     </ContainerLayout>
   </Wrapper>

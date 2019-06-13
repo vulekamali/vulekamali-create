@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link as ScrollLink } from 'react-scroll';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -21,6 +20,17 @@ const ListContainer = styled.ul`
   justify-content: space-between;
   padding: 0;
   width: 160px;
+
+  @media screen and (min-width: 650px) {
+    width: 280px;
+  }
+`;
+
+const ListContainerRight = styled.ul`
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  width: 80px;
 
   @media screen and (min-width: 650px) {
     width: 280px;
@@ -75,6 +85,7 @@ export {
   Wrapper,
   NavItemsContainer,
   ListContainer,
+  ListContainerRight,
   LeftItemsList,
   LinkStyle,
   List,
@@ -85,6 +96,7 @@ export default {
   Wrapper,
   NavItemsContainer,
   ListContainer,
+  ListContainerRight,
   LeftItemsList,
   LinkStyle,
   List,
