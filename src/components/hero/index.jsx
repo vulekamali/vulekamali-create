@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
+
 import { Typography } from '@material-ui/core';
-import ContainerLayout from '../containerLayout';
+import removeProps from '../../helpers/removeProps';
 
 const Wrapper = styled.div`
-  width: 100%;
   height: 280px;
   background-color: #8ECA62;
   display: flex;
@@ -27,44 +28,45 @@ const Wrapper = styled.div`
   }
 `;
 
-const Text = styled(Typography)`
+const ContainerLayout = styled.div`
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 20px;
+`;
+
+const Text = styled(removeProps({ component: Typography, blacklist: 'home' }))`
   color: #fff;
   font-family: Lato;
   line-height: normal;
   font-size: 60px;
   font-weight: 700;
   letter-spacing: -0.01em;
-  padding-top: 90px;
-  padding-bottom: 25px;
+  padding-top: ${({ home }) => (home ? '20px' : '90px')};
 
   @media screen and (min-width: 450px) {
-    font-size: 75px;
     padding-top: 110px;
   }
 
   @media screen and (min-width: 650px) {
     font-size: 90px;
     font-weight: 900;
-    padding-top: 133px;
   }
 
   @media screen and (min-width: 850px) {
-    font-size: 130px;
-    padding-top: 175px;
-  }
-
-  @media screen and (min-width: 1024px) {
-    font-size: 130px;
-    padding-top: 175px;
+    padding-top: 200px;
   }
 `;
 
-const Hero = () => (
+const Hero = ({ title, home }) => (
   <Wrapper>
     <ContainerLayout>
-      <Text>Event</Text>
+      <Text {...{ home }}>{title}</Text>
     </ContainerLayout>
   </Wrapper>
 );
 
 export default Hero;
+
+Hero.propTypes = {
+  title: PropTypes.string.isRequired,
+};
