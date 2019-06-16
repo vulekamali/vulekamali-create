@@ -4,8 +4,10 @@ import Header from '../../components/header';
 import Hero from '../../components/hero';
 import Footer from '../../components/footer';
 import MainEventEventpage from '../../components/mainEventEventpage';
+import * as events from '../../data/events.json';
 import MicroBlog from '../../components/microBlog';
-import freeStateLiteracyCopy from '../../data/freeStateLiteracy.json';
+
+const event = events["budget-literacy-training-free-state"];
 
 const EventPage = () => (
   <React.Fragment>
@@ -19,7 +21,7 @@ const EventPage = () => (
     <Header />
     <Hero title="Event" />
     <MainEventEventpage
-      eventCopy={freeStateLiteracyCopy}
+      eventCopy={event}
       criteriaUrl={null}
       getStartedUrl={null}
       signupUrl={null}
