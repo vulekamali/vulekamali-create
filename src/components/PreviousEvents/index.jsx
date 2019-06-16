@@ -15,18 +15,16 @@ const PreviousEvents = ({ events, ...props }) => (
       <Title>Previous Events</Title>
       <EventsWrapper>
         <EventContainer>
-          {
-            events.map(eventCopy =>
-                                <SideEvent
-                                    eventCopy={eventCopy}
-                                    learnMore
-                                    />
-                               )
-          }
-        </EventContainer>
-      </EventsWrapper>
+          {events.map(eventCopy =>
+                      <SideEvent
+                          eventCopy={eventCopy}
+                          learnMore
+                          />
+                     )}
+  </EventContainer>
+    </EventsWrapper>
     </Layout>
-  </Wrapper>
+    </Wrapper>
 );
 
 export default PreviousEvents;

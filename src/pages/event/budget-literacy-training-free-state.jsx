@@ -7,7 +7,9 @@ import MainEventEventpage from '../../components/mainEventEventpage';
 import * as events from '../../data/events.json';
 import MicroBlog from '../../components/microBlog';
 
-const event = events["budget-literacy-training-free-state"];
+const [event] = events.default.filter(
+  event => event.slug == "budget-literacy-training-free-state"
+);
 
 const EventPage = () => (
   <React.Fragment>

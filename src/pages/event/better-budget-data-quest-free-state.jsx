@@ -8,7 +8,9 @@ import MicroBlog from '../../components/microBlog';
 import * as events from '../../data/events.json';
 import ProjectList from '../../components/projectList';
 
-const event = events["better-budget-data-quest-free-state"];
+const [event] = events.default.filter(
+  event => event.slug == "better-budget-data-quest-free-state"
+);
 
 const EventPage = () => (
   <React.Fragment>

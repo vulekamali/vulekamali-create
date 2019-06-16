@@ -9,17 +9,8 @@ import PreviousEvents from '../components/PreviousEvents';
 import HomepageFooter from '../components/HomepageFooter';
 import * as events from '../data/events.json';
 
-const stateReducer = function(state) {
-  return function(filteredEvents, key) {
-    if (events.default[key].state == state)
-      return [...filteredEvents, events.default[key]];
-    else
-      return filteredEvents;
-  };
-};
-
-const featuredEvents = Object.keys(events.default).reduce(stateReducer("featured"), []);
-const pastEvents = Object.keys(events.default).reduce(stateReducer("past"), []);
+const featuredEvents = events.default.filter(event => event.state == "featured");
+const pastEvents = events.default.filter(event => event.state == "past");
 
 const IndexPage = () => (
   <React.Fragment>
