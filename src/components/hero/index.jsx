@@ -36,7 +36,7 @@ const ContainerLayout = styled.div`
 
 const Text = styled(removeProps({ component: Typography, blacklist: 'home' }))`
   color: #fff;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   line-height: normal;
   font-size: 60px;
   font-weight: 700;
