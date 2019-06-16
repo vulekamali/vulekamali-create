@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: ${({ secondCard }) => (secondCard ? '40px' : '-100px')};
+  margin-top: 40px;
 `;
 
 const CardContainer = styled(CardContent)`

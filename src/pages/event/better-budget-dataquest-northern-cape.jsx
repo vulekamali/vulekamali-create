@@ -4,10 +4,13 @@ import Header from '../../components/header';
 import Hero from '../../components/hero';
 import Footer from '../../components/footer';
 import MainEventEventpage from '../../components/mainEventEventpage';
+import * as events from '../../data/events.json';
 import ProjectList from '../../components/projectList';
 import MicroBlog from '../../components/microBlog';
 
-import northernCapeCopy from '../../data/northernCape.json';
+const [event] = events.default.filter(
+  event => event.slug == "better-budget-dataquest-northern-cape"
+);
 
 const EventPage = () => (
   <React.Fragment>
@@ -21,7 +24,7 @@ const EventPage = () => (
     <Header />
     <Hero title="Event" />
     <MainEventEventpage
-      eventCopy={northernCapeCopy}
+      eventCopy={event}
       criteriaUrl="https://docs.google.com/document/d/1sVMD4OJHuOClKSVuA2Cj57vXR0AiaDtux5m7Re510tI/export?format=pdf"
       getStartedUrl="https://s3-eu-west-1.amazonaws.com/manual-uploads.vulekamali.gov.za/events/Vulekamali+BetterBudgetSA+Dataquest+NC%2C+01+-+02+March.pdf"
       signupUrl="https://s3-eu-west-1.amazonaws.com/manual-uploads.vulekamali.gov.za/events/Vulekamali+BetterBudgetSA+Dataquest+NC%2C+01+-+02+March.pdf"

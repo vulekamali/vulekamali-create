@@ -5,8 +5,12 @@ import Hero from '../../components/hero';
 import Footer from '../../components/footer';
 import MainEventEventpage from '../../components/mainEventEventpage';
 import MicroBlog from '../../components/microBlog';
-import freeStateDQCopy from '../../data/freeStateDQ.json';
+import * as events from '../../data/events.json';
 import ProjectList from '../../components/projectList';
+
+const [event] = events.default.filter(
+  event => event.slug == "better-budget-data-quest-free-state"
+);
 
 const EventPage = () => (
   <React.Fragment>
@@ -20,7 +24,7 @@ const EventPage = () => (
     <Header />
     <Hero title="Event" />
     <MainEventEventpage
-      eventCopy={freeStateDQCopy}
+      eventCopy={event}
       criteriaUrl={null}
       getStartedUrl={null}
       signupUrl={null}

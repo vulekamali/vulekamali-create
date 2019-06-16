@@ -1,6 +1,5 @@
 import React from 'react';
 import SideEvent from '../SideEvent';
-import northernCapeCopy from '../../data/northernCape.json';
 
 import {
   Wrapper,
@@ -10,20 +9,22 @@ import {
   EventContainer,
 } from './styled';
 
-const UpcomingEvents = () => (
+const PreviousEvents = ({ events, ...props }) => (
   <Wrapper id="previous-events">
     <Layout>
       <Title>Previous Events</Title>
       <EventsWrapper>
         <EventContainer>
-          <SideEvent
-            eventCopy={northernCapeCopy}
-            learnMore
-          />
-        </EventContainer>
-      </EventsWrapper>
+          {events.map(eventCopy =>
+                      <SideEvent
+                          eventCopy={eventCopy}
+                          learnMore
+                          />
+                     )}
+  </EventContainer>
+    </EventsWrapper>
     </Layout>
-  </Wrapper>
+    </Wrapper>
 );
 
-export default UpcomingEvents;
+export default PreviousEvents;

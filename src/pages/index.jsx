@@ -7,6 +7,10 @@ import MainEventHomepage from '../components/mainEventHomepage';
 import Expectations from '../components/Expectations';
 import PreviousEvents from '../components/PreviousEvents';
 import HomepageFooter from '../components/HomepageFooter';
+import * as events from '../data/events.json';
+
+const featuredEvents = events.default.filter(event => event.state == "featured");
+const pastEvents = events.default.filter(event => event.state == "past");
 
 const IndexPage = () => (
   <React.Fragment>
@@ -19,9 +23,9 @@ const IndexPage = () => (
     </Helmet>
     <Header />
     <Hero title="Create with us!" home />
-    <MainEventHomepage />
+    <MainEventHomepage events={featuredEvents} />
     <Expectations />
-    <PreviousEvents />
+    <PreviousEvents events={pastEvents} />
     <HomepageFooter />
   </React.Fragment>
 );
