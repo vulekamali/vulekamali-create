@@ -4,7 +4,7 @@ const GlobalStyle = createGlobalStyle`
   .lb24-default-list-item-title {
     color: #243858 !important;
     font-size: 12px !important;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0.01071em;
@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
   .lb24-default-list-item-date {
     color: #8091a5 !important;
     font-size: 12px !important;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.01071em;
@@ -42,7 +42,7 @@ const GlobalStyle = createGlobalStyle`
 
   .lb24-component-content {
     font-size: 14px !important;
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.01071em;

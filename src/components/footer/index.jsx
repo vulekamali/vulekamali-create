@@ -24,7 +24,7 @@ const TextContainer = styled.div`
 
 const Text = styled(Typography)`
   color: rgba(255, 255, 255, 0.6);
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: 12px;
