@@ -61,7 +61,7 @@ const LinkStyle = styled.a`
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
   text-transform: Uppercase;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-weight: 700;
   line-height: normal;
   font-size: 10px;

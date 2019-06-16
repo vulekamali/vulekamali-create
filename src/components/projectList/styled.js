@@ -17,7 +17,7 @@ const Wrapper = styled.div`
 `;
 
 const Heading = styled(Typography)`
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-style: normal;
   font-weight: 900;
   line-height: 40px;
@@ -90,7 +90,7 @@ const TextContainer = styled.div`
 `;
 
 const Contributor = styled(Typography)`
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   color: #42526E;
   font-size: 12px;
   font-weight: 700;
@@ -113,7 +113,7 @@ const Underline = styled.div`
 `;
 
 const Title = styled(Typography)`
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-style: normal;
   font-weight: 900;
   line-height: normal;
@@ -123,7 +123,7 @@ const Title = styled(Typography)`
 `;
 
 const Paragraph = styled(Typography)`
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 28px;
@@ -142,7 +142,7 @@ const ButtonStyle = styled(Button)`
   min-width: 135px;
   height: 36px;
   color: rgba(36, 56, 88, 0.7);
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-weight: 400;
   line-height: normal;
   font-size: 14px;

@@ -49,7 +49,7 @@ const DateIconStyled = styled(CalendarIcon)`
 `;
 
 const Date = styled(Typography)`
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   color: #42526E;
   font-size: 12px;
   font-weight: 700;
@@ -72,7 +72,7 @@ const Underline = styled.div`
 
 const Title = styled(Typography)`
   && {
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     color: #243858;
     font-size: 35px;
     font-weight: 700;
@@ -106,7 +106,7 @@ const LocationIconStyled = styled(LocationIcon)`
 `;
 
 const Location = styled(Typography)`
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   color: #42526E;
   font-size: 12px;
   font-weight: 700;
@@ -120,7 +120,7 @@ const Location = styled(Typography)`
 `;
 
 const DescriptionContainer = styled(Typography)`
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   color: #42526E;
   font-size: 14px;
   font-weight: 400;
@@ -164,7 +164,7 @@ const ButtonStyle = styled(Button)`
   min-width: 200px;
   height: 36px;
   color: rgba(36, 56, 88, 0.7);
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-size: 14px;
   line-height: normal;
   font-weight: 700;
@@ -182,7 +182,7 @@ const ActionPackButton = styled(Button)`
   min-width: 200px;
   height: 36px;
   color: #fff;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-size: 14px;
   line-height: normal;
   font-weight: 700;

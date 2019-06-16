@@ -4,7 +4,7 @@ import { Typography, Card } from '@material-ui/core';
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   color: black;
   margin-top: 40px;
 
@@ -14,7 +14,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled(Typography)`
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-style: normal;
   font-weight: 900;
   line-height: 40px;
@@ -39,7 +39,7 @@ const ComingSoonContainer = styled(Card)`
 
 const ComingSoonText = styled(Typography)`
   && {
-    font-family: Lato;
+    font-family: Lato, sans-serif;
     font-style: normal;
     font-weight: 900;
     line-height: 40px;
