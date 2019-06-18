@@ -1,7 +1,9 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+exports.createPages = ({ actions }) => {
+  const { createRedirect } = actions;
 
-// You can delete this file if you're not using it
+  createRedirect({
+    fromPath: '/fs/',
+    redirectInBrowser: true,
+    toPath: '/event/better-budget-data-quest-free-state/',
+  });
+};
